@@ -733,6 +733,9 @@
             <hr />
           </div>
           <app_CoffeeUserShopCart />
+          <div class="form-group col-12 text-left">
+            <button class="button b-item">پرداخت</button>
+          </div>
         </div>
       </div>
     </div>

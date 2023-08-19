@@ -12,7 +12,7 @@ import DocsExample from '@/components/DocsExample'
 import { CSwitch, CButton } from '@coreui/vue'
 import '@coreui/coreui/dist/css/coreui.min.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import '../src/assets/css/style.css'
+// import '../src/assets/css/style.css'
 
 const app = createApp(App)
 app.use(store)
