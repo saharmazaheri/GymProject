@@ -1,19 +1,5 @@
 <template>
   <div dir="rtl">
-    <!-- Page Header Start -->
-    <div class="page-header">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2>ورود</h2>
-          </div>
-          <div class="col-12">
-            <a href="index.html">خانه</a>
-            <a href="">ورود</a>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- Page Header End -->
     <div class="container">
       <section id="cart_items">

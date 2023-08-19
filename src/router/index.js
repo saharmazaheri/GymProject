@@ -81,9 +81,14 @@ const routes = [
         redirect: '/theme/typography',
       },
       {
-        path: '/theme/custompage',
-        name: 'CustomPage',
-        component: () => import('@/views/theme/CustomPage.vue'),
+        path: '/theme/user-panel',
+        name: 'UserPanel',
+        component: () => import('@/views/theme/UserPanel.vue'),
+      },
+      {
+        path: '/theme/trainer-panel',
+        name: 'TrainerPanel',
+        component: () => import('@/views/theme/TrainerPanel.vue'),
       },
       {
         path: '/theme/colors',

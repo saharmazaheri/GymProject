@@ -15,8 +15,14 @@ export default [
   },
   {
     component: 'CNavItem',
-    name: 'CustomPage',
-    to: '/theme/custompage',
+    name: 'UserPanel',
+    to: '/theme/user-panel',
+    icon: 'cil-drop',
+  },
+  {
+    component: 'CNavItem',
+    name: 'TrainerPanel',
+    to: '/theme/trainer-panel',
     icon: 'cil-drop',
   },
   {
