@@ -43,7 +43,7 @@
           </div>
 
           <div class="text-left">
-            <button class="button b-item">ویرایش اطلاعات</button>
+            <CButton class="button b-item">ویرایش اطلاعات</CButton>
           </div>
         </div>
       </div>
@@ -707,7 +707,7 @@
             </div>
 
             <div class="form-group col-12 text-left">
-              <button class="button b-item">پرداخت و ثبت اطلاعات</button>
+              <CButton class="button b-item">پرداخت و ثبت اطلاعات</CButton>
             </div>
           </form>
         </div>
@@ -721,7 +721,7 @@
           </div>
           <p class="text-center">تعداد سفارشات: 0</p>
           <div class="form-group col-12 text-left">
-            <button class="button b-item">دریافت برنامه</button>
+            <CButton class="button b-item">دریافت برنامه</CButton>
           </div>
         </div>
       </div>
@@ -734,7 +734,7 @@
           </div>
           <app_CoffeeUserShopCart />
           <div class="form-group col-12 text-left">
-            <button class="button b-item">پرداخت</button>
+            <CButton class="button b-item">پرداخت</CButton>
           </div>
         </div>
       </div>
