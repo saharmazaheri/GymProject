@@ -36,12 +36,18 @@
                         <p>{{ item.type }}</p>
                       </td>
                       <td class="cart_quantity">
-                        <div class="cart_quantity_button">
-                          <p>{{ item.field }}</p>
-                        </div>
+                        <p>{{ item.field }}</p>
                       </td>
-                      <td style="color: rgb(176, 7, 7)">حذف</td>
-                      <td style="color: rgb(38, 220, 47)">ویرایش</td>
+                      <td style="color: #fff">
+                        <CButton style="background-color: rgb(208, 64, 64)"
+                          >حذف</CButton
+                        >
+                      </td>
+                      <td style="color: #fff">
+                        <CButton style="background-color: rgb(38, 220, 47)"
+                          >ویرایش</CButton
+                        >
+                      </td>
                     </tr>
                   </CTableBody>
                 </CTable>
@@ -154,7 +160,7 @@
                     </div>
                   </CRow>
                   <div class="text-left">
-                    <CButton class="button Bitem">ویرایش بیوگرافی</CButton>
+                    <CButton class="button Bitem">ثبت مربی</CButton>
                   </div>
                 </div>
               </CAccordionBody>

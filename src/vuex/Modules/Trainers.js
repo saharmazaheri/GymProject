@@ -130,7 +130,7 @@ const state = {
       type1: 'خصوصی',
       NameFamily1: 'لیلا محمدی',
       type2: 'عمومی',
-      NameFamily2: 'حسین محمودی',
+      NameFamily2: 'مهسا سلطانی',
       type3: 'خصوصی',
       NameFamily3: 'فاطمه ابراهیمی',
       type4: 'عمومی',

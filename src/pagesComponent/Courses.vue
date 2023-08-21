@@ -55,9 +55,7 @@
               <p>
                 {{ item.price }}
               </p>
-
-              <p>شنبه،چهارشنبه <i class="far fa-calendar-alt"></i></p>
-              <p>8:00-12:00 <i class="far fa-clock"></i></p>
+              <p>ظرفیت باقیمانده {{ item.Capacity }} نفر</p>
             </div>
           </div>
         </div>
