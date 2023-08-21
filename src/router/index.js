@@ -111,6 +111,11 @@ const routes = [
         redirect: '/base/breadcrumbs',
         children: [
           {
+            path: '/base/traineredit',
+            name: 'TrainerEdit',
+            component: () => import('@/views/base/TrainerEdit.vue'),
+          },
+          {
             path: '/base/accordion',
             name: 'Accordion',
             component: () => import('@/views/base/Accordion.vue'),

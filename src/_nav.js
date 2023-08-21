@@ -49,6 +49,11 @@ export default [
     items: [
       {
         component: 'CNavItem',
+        name: 'TrainerEdit',
+        to: '/base/traineredit',
+      },
+      {
+        component: 'CNavItem',
         name: 'Accordion',
         to: '/base/accordion',
       },
