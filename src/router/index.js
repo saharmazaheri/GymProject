@@ -116,6 +116,11 @@ const routes = [
             component: () => import('@/views/base/TrainerEdit.vue'),
           },
           {
+            path: '/base/coursesedit',
+            name: 'CoursesEdit',
+            component: () => import('@/views/base/CoursesEdit.vue'),
+          },
+          {
             path: '/base/accordion',
             name: 'Accordion',
             component: () => import('@/views/base/Accordion.vue'),

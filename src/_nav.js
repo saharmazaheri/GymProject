@@ -54,6 +54,11 @@ export default [
       },
       {
         component: 'CNavItem',
+        name: 'CoursesEdit',
+        to: '/base/coursesedit',
+      },
+      {
+        component: 'CNavItem',
         name: 'Accordion',
         to: '/base/accordion',
       },
