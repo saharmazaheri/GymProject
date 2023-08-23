@@ -50,12 +50,17 @@ export default [
       {
         component: 'CNavItem',
         name: 'TrainerEdit',
-        to: '/base/traineredit',
+        to: '/base/trainer-edit',
       },
       {
         component: 'CNavItem',
         name: 'CoursesEdit',
-        to: '/base/coursesedit',
+        to: '/base/courses-edit',
+      },
+      {
+        component: 'CNavItem',
+        name: 'CoffeShopEdit',
+        to: '/base/coffe-shop-edit',
       },
       {
         component: 'CNavItem',
