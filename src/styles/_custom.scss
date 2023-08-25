@@ -1,1 +1,27 @@
 // Here you can add other styles
+@media (min-width: 768px) {
+    .sidebar.sidebar-fixed {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        z-index: 1030;
+    }
+    html:not([dir=rtl]) .sidebar.sidebar-fixed:not(.sidebar-end) {
+        right: 0;
+    }
+    *[dir=rtl] .sidebar.sidebar-fixed:not(.sidebar-end) {
+        right: 0;
+    }
+    html:not([dir=rtl]) .sidebar.sidebar-fixed.sidebar-end {
+        right: 0;
+    }
+    *[dir=rtl] .sidebar.sidebar-fixed.sidebar-end {
+        right: 0;
+    }
+    }
+    html:not([dir=rtl]) .me-auto {
+        margin-right: 0 !important;
+      }
+      *[dir=rtl] .me-auto {
+        margin-left: auto !important;
+      }
