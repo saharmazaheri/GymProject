@@ -9,9 +9,7 @@
       </CHeaderBrand>
       <CHeaderNav class="d-none d-md-flex me-auto">
         <CNavItem>
-          <CNavLink style="direction: rtl" href="/dashboard">
-            Dashboard
-          </CNavLink>
+          <CNavLink href="/dashboard"> Dashboard </CNavLink>
         </CNavItem>
         <CNavItem>
           <CNavLink href="#">Users</CNavLink>
