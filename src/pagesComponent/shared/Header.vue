@@ -1,7 +1,7 @@
 <template>
   <header>
     <!-- Top Bar Start -->
-    <div class="top-bar d-none d-md-block">
+    <!-- <div class="top-bar d-none d-md-block">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-8">
@@ -30,12 +30,15 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- Top Bar End -->
 
     <!-- Nav Bar Start -->
-    <div class="navbar navbar-expand-lg bg-dark navbar-dark">
-      <div class="container-fluid">
+    <div
+      style="background-color: #343148 !important"
+      class="headerP navbar navbar-expand-lg bg-dark navbar-dark d-none d-md-block font-p"
+    >
+      <div class="container-fluid" style="padding: 0px 0px">
         <router-link to="/login" active-class="active" class="nav-item nav-link"
           >ورود <i class="fa fa-lock"></i
         ></router-link>
@@ -129,200 +132,13 @@
     <!-- Nav Bar End -->
   </header>
 </template>
-
 <style>
-/**********************************/
-/********** Top Bar CSS ***********/
-/**********************************/
-.top-bar {
-  position: relative;
-  height: 35px;
-  background: #343148;
-}
-
-.top-bar .top-bar-left {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.top-bar .top-bar-right {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.top-bar .text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  height: 35px;
-  padding: 0 10px;
-  text-align: center;
-  border-left: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-.top-bar .text:last-child {
-  border-right: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-.top-bar .text i {
-  font-size: 13px;
-  color: #ffffff;
-  margin-right: 5px;
-}
-
-.top-bar .text h2 {
-  color: #eeeeee;
-  font-weight: 400;
-  font-size: 13px;
-  letter-spacing: 1px;
-  margin: 0;
-}
-
-.top-bar .text p {
-  color: #eeeeee;
-  font-size: 14px;
-  font-weight: 400;
-  margin: 0 0 0 5px;
-}
-
-.top-bar .social {
-  display: flex;
-  height: 35px;
-  font-size: 0;
-  justify-content: flex-end;
-}
-
-.top-bar .social a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 35px;
-  height: 100%;
-  font-size: 16px;
-  color: #ffffff;
-  border-right: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-.top-bar .social a:first-child {
-  border-left: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-.top-bar .social a:hover {
-  color: #092a49;
-  background: #ffffff;
-}
-
-@media (min-width: 992px) {
-  .top-bar {
-    padding: 0 60px;
-  }
-}
-
-/**********************************/
-/*********** Nav Bar CSS **********/
-/**********************************/
-.navbar {
-  position: relative;
-  transition: 0.5s;
-  z-index: 999;
-}
-
-.navbar.nav-sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-.navbar .navbar-brand {
-  margin: 0;
-  color: #ffffff;
-  font-size: 45px;
-  line-height: 0px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  transition: 0.5s;
-}
-
-.navbar .navbar-brand span {
-  color: #343148;
-  text-transform: lowercase;
-  transition: 0.5s;
-}
-
-.navbar.nav-sticky .navbar-brand span {
-  color: #ffffff;
-}
-
-.navbar .navbar-brand img {
-  max-width: 100%;
-  max-height: 40px;
-}
-
-.navbar-dark .navbar-nav .nav-link,
-.navbar-dark .navbar-nav .nav-link:focus,
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link.active {
-  padding: 10px 10px 8px 10px;
-  color: #ffffff;
-}
-
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link.active {
-  background: rgba(256, 256, 256, 0.1);
-  transition: none;
-}
-
-.navbar .dropdown-menu {
-  margin-top: 0;
-  border: 0;
-  border-radius: 0;
-  background: #f8f9fa;
-}
-
-@media (min-width: 992px) {
-  .navbar {
-    position: absolute;
-    width: 100%;
-    top: 35px;
-    padding: 20px 60px;
-    background: rgba(0, 0, 0, 0.1) !important;
-    z-index: 9;
-  }
-
-  .navbar.nav-sticky {
-    padding: 10px 60px;
-    background: #343148 !important;
-  }
-
-  .navbar a.nav-link {
-    padding: 8px 15px;
-    font-size: 14px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  }
-}
-
-@media (max-width: 991.98px) {
-  .navbar {
-    padding: 15px;
-    background: #343148 !important;
-  }
-
-  .navbar .navbar-brand span {
-    color: #ffffff;
-  }
-
-  .navbar a.nav-link {
-    padding: 5px;
-  }
-
-  .navbar .dropdown-menu {
-    box-shadow: none;
-  }
+.headerP {
+  position: fixed !important;
+  top: 0 !important;
+  right: 0 !important;
+  left: 0 !important;
+  z-index: 1030 !important;
+  height: 70px;
 }
 </style>

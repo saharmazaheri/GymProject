@@ -8,20 +8,20 @@
           <router-view />
         </CContainer>
       </div>
-      <AppFooter />
+      <!-- <AppFooter /> -->
     </div>
   </div>
 </template>
 <script>
 import { CContainer } from '@coreui/vue'
-import AppFooter from '@/components/AppFooter.vue'
+// import AppFooter from '@/components/AppFooter.vue'
 import AppHeader from '@/components/AppHeader.vue'
 import AppSidebar from '@/components/AppSidebar.vue'
 
 export default {
   name: 'DefaultLayout',
   components: {
-    AppFooter,
+    // AppFooter,
     AppHeader,
     AppSidebar,
     CContainer,

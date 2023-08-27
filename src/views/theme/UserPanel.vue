@@ -732,7 +732,7 @@
             <h4 class="title">سبد خرید</h4>
             <hr />
           </div>
-          <app_CoffeeUserShopCart />
+          <app_CoffeeUserShopCart id="saharchi" />
           <div class="form-group col-12 text-left">
             <CButton class="button b-item">پرداخت</CButton>
           </div>
