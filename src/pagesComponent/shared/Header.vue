@@ -105,26 +105,6 @@
               class="nav-item nav-link"
               >کافی شاپ</router-link
             >
-            <router-link
-              to="/CoffeeUserShopCart"
-              active-class="active"
-              class="nav-item nav-link"
-              >سبد خرید</router-link
-            >
-
-            <a href="" class="nav-item nav-link">Pose</a>
-            <div class="nav-item dropdown">
-              <a
-                href="#"
-                class="nav-link dropdown-toggle"
-                data-toggle="dropdown"
-                >Blog</a
-              >
-              <div class="dropdown-menu">
-                <a href="" class="dropdown-item">Blog Grid</a>
-                <a href="" class="dropdown-item">Blog Detail</a>
-              </div>
-            </div>
           </div>
         </div>
       </div>

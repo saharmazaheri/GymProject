@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="font-p">
+    <Headerapp />
     <!-- Page Header Start -->
     <div class="page-header">
       <div class="container">
@@ -8,8 +9,8 @@
             <h2>اطلاعات مربی</h2>
           </div>
           <div class="col-12">
-            <a href="">خانه</a>
-            <a href="">اطلاعات مربی</a>
+            <router-link to="/">خانه</router-link>
+            <router-link to="/trainers">مربی‌ها</router-link>
           </div>
         </div>
       </div>
@@ -80,11 +81,102 @@
       </div>
     </div>
     <!-- Blog End -->
+    <div class="single" dir="rtl">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="single-comment wow fadeInUp" style="width: 800px">
+              <h4 class="headerSingle text-right">دیدگاه کاربران</h4>
+              <ul class="comment-list text-right">
+                <li class="comment-item opinions-p">
+                  <div class="comment-body">
+                    <div class="comment-img">
+                      <img src="../assets/img/opinions/user.png" />
+                    </div>
+                    <div class="comment-text text-right">
+                      <h3>مه گل</h3>
+                      <span> 11:16 1402/02/13</span>
+                      <p>
+                        سلام و خسته نباشید به بهترین مربی، من واقعا از برنامتون
+                        راضی بودم و نتیجه گرفتم.
+                      </p>
+                      <button class="btn">پاسخ</button>
+                    </div>
+                  </div>
+                  <hr class="hr-P" style="margin-right: 80px" />
+                  <ul class="comment-child">
+                    <li class="comment-item">
+                      <div class="comment-body">
+                        <div class="comment-img">
+                          <img :src="trainers[Lid].imge" />
+                        </div>
+                        <div class="comment-textP">
+                          <h3>پاسخ مربی به مه گل</h3>
+                          <p><span>12:00 1402/02/015</span></p>
+                          <p>
+                            سلام مه گل عزیز شما لطف دارید نتیجه تلاش خودتان است
+                            :))
+                          </p>
+                          <a class="btn-T">پاسخ</a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <hr class="hr-P" />
+                <li class="comment-item opinions-p">
+                  <div class="comment-body">
+                    <div class="comment-img">
+                      <img src="../assets/img/opinions/user.png" />
+                    </div>
+                    <div class="comment-text text-right">
+                      <h3>مریم</h3>
+                      <span> 22:30 1402/04/04</span>
+                      <p>
+                        سلام آموزش حرکاتی که گذاشتید خیلی پرکاربرد و مفید هست
+                        ممنون از شما.
+                      </p>
+                      <button class="btn">پاسخ</button>
+                    </div>
+                  </div>
+                  <hr class="hr-P" style="margin-right: 80px" />
+                  <ul class="comment-child">
+                    <li class="comment-item">
+                      <div class="comment-body">
+                        <div class="comment-img">
+                          <img :src="trainers[Lid].imge" />
+                        </div>
+                        <div class="comment-textP">
+                          <h3>پاسخ مربی به مریم</h3>
+                          <p><span>15:25 1402/04/07</span></p>
+                          <p>سلام خیلی خوشحالم که استفاده می‌کنید.</p>
+                          <a class="btn">پاسخ</a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <router-link to="/user-opinion" class="cbtn"
+                >ارسال دیدگاه جدید</router-link
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <Footerapp />
   </div>
 </template>
 
 <script>
+import Header from './shared/Header.vue'
+import Footer from './shared/Footer.vue'
 export default {
+  components: {
+    Headerapp: Header,
+    Footerapp: Footer,
+  },
   computed: {
     trainers() {
       return this.$store.getters.GetTrainers

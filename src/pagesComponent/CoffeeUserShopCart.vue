@@ -1,5 +1,5 @@
 <template>
-  <div dir="rtl">
+  <div dir="rtl" class="font-p">
     <!-- Page Header End -->
     <div class="container" id="saharchi">
       <section id="cart_items">
@@ -61,7 +61,7 @@
                     مجمـوع <span>{{ shopcart }} تومان</span>
                   </li>
                 </ul>
-                <a class="btn btn-default check_out cursor-pointer">پرداخت</a>
+                <router-link to="/dargah-pardakht">درگاه</router-link>
               </div>
             </div>
           </div>
@@ -97,7 +97,7 @@ export default {
   background: #fe980f;
   color: #fff;
   font-size: 16pt;
-  font-family: 'BYekan', sans-serif;
+  font-family: iransans;
   font-weight: normal;
   text-align: center;
 }
@@ -129,7 +129,7 @@ export default {
 
 #cart_items .cart_info .cart_description h4 a {
   color: #363432;
-  font-family: 'BYekan', sans-serif;
+  font-family: iransans;
   font-size: 16pt;
   font-weight: normal;
 }

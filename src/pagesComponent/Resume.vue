@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="font-p">
+    <Headerapp />
     <!-- Page Header Start -->
     <div class="page-header">
       <div class="container">
@@ -8,8 +9,8 @@
             <h2>رزومه</h2>
           </div>
           <div class="col-12">
-            <a href="">خانه</a>
-            <a href="">رزومه</a>
+            <router-link to="/">خانه</router-link>
+            <router-link to="/resume">رزومه</router-link>
           </div>
         </div>
       </div>
@@ -40,12 +41,6 @@
                       @blur="v$.Name.$touch()"
                       :class="{ invalid: v$.Name.$error }"
                     />
-                    <p
-                      class="help-block text-danger"
-                      v-if="!v$.Name.required && v$.Name.$dirty"
-                    >
-                      لطفا نام‌ خود را وارد کنید
-                    </p>
                   </div>
 
                   <div class="control-group">
@@ -57,12 +52,6 @@
                       @blur="v$.Family.$touch()"
                       :class="{ invalid: v$.Family.$error }"
                     />
-                    <p
-                      class="help-block text-danger"
-                      v-if="!v$.Family.required && v$.Family.$dirty"
-                    >
-                      لطفا نام خانوادگی خود را وارد کنید
-                    </p>
                   </div>
 
                   <div class="control-group">
@@ -74,21 +63,6 @@
                       @blur="v$.NationalCode.$touch()"
                       :class="{ invalid: v$.NationalCode.$error }"
                     />
-                    <p
-                      class="help-block text-danger"
-                      v-if="!v$.NationalCode.required && v$.NationalCode.$dirty"
-                    >
-                      لطفا کد ملی خود را وارد کنید
-                    </p>
-                    <p
-                      class="help-block text-danger"
-                      v-if="!v$.NationalCode.minLength"
-                    >
-                      کد ملی باید حداقل شامل{{
-                        v$.NationalCode.$params.minLength.min
-                      }}
-                      کاراکتر باشد
-                    </p>
                   </div>
 
                   <div class="control-group">
@@ -100,12 +74,6 @@
                       @blur="v$.Dateofbirth.$touch()"
                       :class="{ invalid: v$.Dateofbirth.$error }"
                     />
-                    <p
-                      class="help-block text-danger"
-                      v-if="!v$.Dateofbirth.required && v$.Dateofbirth.$dirty"
-                    >
-                      لطفا تاریخ تولد خود را وارد کنید
-                    </p>
                   </div>
 
                   <div class="control-group">
@@ -117,12 +85,6 @@
                       @blur="v$.UserAddress.$touch()"
                       :class="{ invalid: v$.UserAddress.$error }"
                     />
-                    <p
-                      class="help-block text-danger"
-                      v-if="!v$.UserAddress.required && v$.UserAddress.$dirty"
-                    >
-                      لطفا آدرس محل زندگی خود را وارد کنید
-                    </p>
                   </div>
 
                   <div class="control-group">
@@ -135,30 +97,6 @@
                       @blur="v$.PhoneNumber.$touch()"
                       :class="{ invalid: v$.PhoneNumber.$error }"
                     />
-                    <p
-                      class="help-block text-danger"
-                      v-if="!v$.PhoneNumber.required && v$.PhoneNumber.$dirty"
-                    >
-                      لطفا شماره موبایل خود را وارد کنید
-                    </p>
-                    <p
-                      class="help-block text-danger"
-                      v-if="!v$.PhoneNumber.minLength"
-                    >
-                      شماره موبایل باید حداقل شامل{{
-                        v$.PhoneNumber.$params.minLength.min
-                      }}
-                      کاراکتر باشد
-                    </p>
-                    <p
-                      class="help-block text-danger"
-                      v-if="!v$.PhoneNumber.maxLength"
-                    >
-                      شماره موبایل نمی‌تواند بیشتر از{{
-                        v$.PhoneNumber.$params.maxLength.max
-                      }}
-                      کاراکتر داشته باشد
-                    </p>
                   </div>
 
                   <div class="control-group">
@@ -170,24 +108,6 @@
                       @blur="v$.Email.$touch()"
                       :class="{ invalid: v$.Email.$error }"
                     />
-                    <p
-                      class="help-block text-danger"
-                      v-if="!v$.Email.required && v$.Email.$dirty"
-                    >
-                      لطفا ایمیل خود را وارد کنید
-                    </p>
-                    <p class="help-block text-danger" v-if="!v$.Email.email">
-                      ایمیل وارد شده معتبر نمی‌باشد
-                    </p>
-                    <p
-                      class="help-block text-danger"
-                      v-if="!v$.Email.maxLength"
-                    >
-                      ایمیل کاربر نمی‌تواند بیشتر از{{
-                        v$.Email.$params.maxLength.max
-                      }}
-                      کاراکتر داشته باشد
-                    </p>
                   </div>
 
                   <div class="control-group">
@@ -199,12 +119,6 @@
                       @blur="v$.Educational.$touch()"
                       :class="{ invalid: v$.Educational.$error }"
                     />
-                    <p
-                      class="help-block text-danger"
-                      v-if="!v$.Educational.required && v$.Educational.$dirty"
-                    >
-                      لطفا رشته تحصیلی خود را وارد کنید
-                    </p>
                   </div>
 
                   <div class="control-group">
@@ -216,23 +130,13 @@
                       @blur="v$.selectEducational.$touch()"
                       :class="{ invalid: v$.selectEducational.$error }"
                     />
-                    <p
-                      class="help-block text-danger"
-                      v-if="
-                        !v$.selectEducational.required &&
-                        v$.selectEducational.$dirty
-                      "
-                    >
-                      لطفا میزان تحصیلات خود را وارد کنید
-                    </p>
                   </div>
 
                   <div class="text-center">
                     <button
                       class="btn resume-input"
                       type="submit"
-                      @click.prevent="RegisterUser()"
-                      :disabled="v$.$invalid"
+                      @click.prevent="Resume1()"
                     >
                       ثبت اطلاعات
                     </button>
@@ -241,16 +145,19 @@
                 <div class="container text-right">
                   <br />
                   <p>بارگذاری فایل رزومه</p>
-                  <form id="uploadForm" enctype="multipart/form-data">
-                    <input type="file" id="fileInput" />
+                  <form>
+                    <input type="file" style="padding: 8px 8px" />
                     <div>
                       <br />
-                      <button class="btn resume-input" type="submit">
+                      <button
+                        class="btn resume-input"
+                        type="submit"
+                        @click.prevent="Resume2()"
+                      >
                         ارسال
                       </button>
                     </div>
                   </form>
-                  <p id="message"></p>
                 </div>
               </div>
             </div>
@@ -258,16 +165,34 @@
         </div>
       </div>
     </div>
+    <Footerapp />
   </div>
 </template>
 
 <script>
+import Header from './shared/Header.vue'
+import Footer from './shared/Footer.vue'
 import { useVuelidate } from '@vuelidate/core'
 import { Mixin } from '@/Mixins/Mixin.js'
 export default {
+  components: {
+    Headerapp: Header,
+    Footerapp: Footer,
+  },
   setup() {
     return { v$: useVuelidate() }
   },
   mixins: [Mixin],
+  methods: {
+    Resume2() {
+      alert('فایل با موفقیت ارسال شد')
+    },
+  },
 }
 </script>
+<style>
+.control-P {
+  padding: 20px;
+  border-bottom: solid #cccccc;
+}
+</style>

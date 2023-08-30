@@ -21,7 +21,6 @@ const state = {
       type: 'عمومی',
       numberOfSessions: 'شانزده جلسه در یک ماه',
       price: '550.000 تومان',
-      fillter: 'filter-1',
       Capacity: '8',
     },
     {
@@ -29,7 +28,6 @@ const state = {
       type: 'عمومی',
       numberOfSessions: 'دوازده جلسه در دو ماه',
       price: '700.000 تومان',
-      fillter: 'filter-1',
       Capacity: '0',
     },
     {
@@ -37,7 +35,6 @@ const state = {
       type: 'عمومی',
       numberOfSessions: 'شانزده جلسه در دو ماه',
       price: '850.000 تومان',
-      fillter: 'filter-1',
       Capacity: '13',
     },
     {
@@ -45,7 +42,6 @@ const state = {
       type: 'عمومی',
       numberOfSessions: 'بیست و چهار جلسه در سه ماه',
       price: '1.100.000 تومان',
-      fillter: 'filter-1',
       Capacity: '2',
     },
     {
@@ -53,7 +49,6 @@ const state = {
       type: 'خصوصی',
       numberOfSessions: 'هشت جلسه در یک ماه',
       price: '350.000 تومان',
-      fillter: 'filter-2',
       Capacity: '9',
     },
     {
@@ -61,7 +56,6 @@ const state = {
       type: 'خصوصی',
       numberOfSessions: 'دوازده جلسه در یک ماه',
       price: '550.000 تومان',
-      fillter: 'filter-2',
       Capacity: '11',
     },
     {
@@ -69,7 +63,6 @@ const state = {
       type: 'خصوصی',
       numberOfSessions: 'شانزده جلسه در یک ماه',
       price: '650.000 تومان',
-      fillter: 'filter-2',
       Capacity: '3',
     },
     {
@@ -77,7 +70,6 @@ const state = {
       type: 'خصوصی',
       numberOfSessions: 'دوازده جلسه در دو ماه',
       price: '800.000 تومان',
-      fillter: 'filter-2',
       Capacity: '21',
     },
     {
@@ -85,7 +77,6 @@ const state = {
       type: 'خصوصی',
       numberOfSessions: 'شانزده جلسه در دو ماه',
       price: '950.000 تومان',
-      fillter: 'filter-2',
       Capacity: '15',
     },
     {
@@ -93,7 +84,6 @@ const state = {
       type: 'خصوصی',
       numberOfSessions: 'بیست و چهار جلسه در سه ماه',
       price: '1.200.000 تومان',
-      fillter: 'filter-2',
       Capacity: '20',
     },
     {
@@ -101,7 +91,6 @@ const state = {
       type: 'آزاد',
       numberOfSessions: 'یک جلسه عمومی',
       price: '30.000 تومان',
-      fillter: 'filter-3',
       Capacity: '7',
     },
     {
@@ -109,7 +98,6 @@ const state = {
       type: 'آزاد',
       numberOfSessions: 'یک جلسه خصوصی',
       price: '50.000 تومان',
-      fillter: 'filter-3',
       Capacity: '2',
     },
   ],

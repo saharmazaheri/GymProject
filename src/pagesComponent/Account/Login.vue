@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="font-p">
+    <Headerapp />
     <!-- Page Header Start -->
     <div class="page-header">
       <div class="container">
@@ -8,8 +9,8 @@
             <h2>ورود</h2>
           </div>
           <div class="col-12">
-            <a href="index.html">خانه</a>
-            <a href="">ورود</a>
+            <router-link to="/">خانه</router-link>
+            <router-link to="/login">ورود</router-link>
           </div>
         </div>
       </div>
@@ -40,20 +41,6 @@
                       @blur="v$.Email.$touch()"
                       :class="{ invalid: v$.Email.$error }"
                     />
-
-                    <span class="input-group-addon">
-                      <i class="fa fa-user"></i>
-                    </span>
-                    <span data-label=""></span>
-                    <p
-                      class="help-block text-danger"
-                      v-if="!v$.Email.required && v$.Email.$dirty"
-                    >
-                      لطفا ایمیل خود را وارد کنید
-                    </p>
-                    <p class="help-block text-danger" v-if="!v$.Email.email">
-                      ایمیل وارد شده معتبر نمی‌باشد
-                    </p>
                   </div>
                   <br />
                   <div class="control-group">
@@ -61,19 +48,9 @@
                       type="password"
                       placeholder="رمز عبور"
                       v-model="Password"
-                      @blur="v$.assword.$touch()"
+                      @blur="v$.Password.$touch()"
                       :class="{ invalid: v$.Password.$error }"
                     />
-                    <span class="input-group-addon">
-                      <i class="fa fa-lock"></i>
-                    </span>
-                    <span data-label=""></span>
-                    <p
-                      class="help-block text-danger"
-                      v-if="!v$.Password.required && v$.Password.$dirty"
-                    >
-                      لطفا رمز عبور خود را وارد کنید
-                    </p>
                   </div>
                   <br />
                   <div class="text-center">
@@ -86,12 +63,12 @@
                   </div>
                 </form>
                 <br />
-                <div class="icon">
+                <div>
                   <p>رمز عبور خود را فراموش کردید؟</p>
                   <p>
                     حساب کاربری ندارید؟
-                    <a href="signup.html"
-                      ><i class="fa fa-lock"></i>ساخت حساب</a
+                    <router-link to="/register">
+                      <i class="fa fa-lock"></i> ساخت حساب</router-link
                     >
                   </p>
                 </div>
@@ -102,13 +79,20 @@
       </div>
     </div>
     <!-- sign in -->
+    <Footerapp />
   </div>
 </template>
 
 <script>
+import Header from '../shared/Header.vue'
+import Footer from '../shared/Footer.vue'
 import { useVuelidate } from '@vuelidate/core'
 import { Mixin } from '@/Mixins/Mixin.js'
 export default {
+  components: {
+    Headerapp: Header,
+    Footerapp: Footer,
+  },
   setup() {
     return { v$: useVuelidate() }
   },

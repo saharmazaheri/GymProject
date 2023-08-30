@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="font-p">
+    <Headerapp />
     <!-- Page Header Start -->
     <div class="page-header">
       <div class="container">
@@ -9,7 +10,7 @@
           </div>
           <div class="col-12">
             <router-link to="/">خانه</router-link>
-            <router-link to="/AboutUs">درباره‌ی ما</router-link>
+            <router-link to="/AboutUs">درباره‌ما</router-link>
           </div>
         </div>
       </div>
@@ -22,7 +23,11 @@
         <div class="row align-items-center">
           <div class="col-lg-5 col-md-6">
             <div class="about-img">
-              <img src="img/about.png" alt="Image" />
+              <img
+                src="../assets/img/index/gym1.jpg"
+                alt="Image"
+                style="border-radius: 0.375rem"
+              />
             </div>
           </div>
           <div class="col-lg-7 col-md-6">
@@ -30,7 +35,7 @@
               <p>About Hero</p>
               <h2>به هیرو خوش آمدید</h2>
             </div>
-            <div class="about-text">
+            <div class="about-text font-p">
               <p>
                 تناسب اندام به معنای بهتر بودن از شخص دیگر نیست ... بلکه بهتر
                 بودن از گذشته است. تیم بزرگ هیرو فیت با در دست داشتن متخصصین با
@@ -103,8 +108,8 @@
           class="section-header text-center wow zoomIn"
           data-wow-delay="0.1s"
         >
-          <p>Get In Touch</p>
-          <h2>For Any Query</h2>
+          <p>در تماس باشید</p>
+          <h2>برای هر پرس‌وجو</h2>
         </div>
         <div class="row">
           <div class="col-12">
@@ -115,8 +120,8 @@
               >
                 <i class="fa fa-map-marker-alt"></i>
                 <div class="contact-text">
-                  <h2>Location</h2>
-                  <p>123 Street, New York, USA</p>
+                  <h2>آدرس</h2>
+                  <p>اصفهان خیابان هزارجریب</p>
                 </div>
               </div>
               <div
@@ -125,8 +130,8 @@
               >
                 <i class="fa fa-phone-alt"></i>
                 <div class="contact-text">
-                  <h2>Phone</h2>
-                  <p>+012 345 67890</p>
+                  <h2>تلفن</h2>
+                  <p>+031 3456 6789</p>
                 </div>
               </div>
               <div
@@ -135,8 +140,8 @@
               >
                 <i class="far fa-envelope"></i>
                 <div class="contact-text">
-                  <h2>Email</h2>
-                  <p>info@example.com</p>
+                  <h2>ایمیل</h2>
+                  <p>herofit@gmail.com</p>
                 </div>
               </div>
             </div>
@@ -145,5 +150,21 @@
       </div>
     </div>
     <!-- Contact End -->
+    <Footerapp />
   </div>
 </template>
+
+<script>
+import Header from './shared/Header.vue'
+import Footer from './shared/Footer.vue'
+
+export default {
+  components: {
+    Headerapp: Header,
+    Footerapp: Footer,
+  },
+}
+</script>
+<style>
+@import '../assets/css/bootstrap1.css';
+</style>

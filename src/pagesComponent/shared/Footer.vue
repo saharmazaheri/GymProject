@@ -1,4 +1,4 @@
-<template>
+<template class="font-p">
   <footer>
     <!-- Footer Start -->
     <div class="footer wow fadeIn" data-wow-delay="0.3s">
@@ -6,10 +6,10 @@
         <div class="container">
           <div class="footer-info">
             <a href="" class="footer-logo">H<span>ero</span> fit</a>
-            <h3>123 Street, New York, USA</h3>
+            <h3>اصفهان خیابان هزارجریب</h3>
             <div class="footer-menu">
-              <p>+012 345 67890</p>
-              <p>info@example.com</p>
+              <p>+031 3456 6789</p>
+              <p>herofit@gmail.com</p>
             </div>
             <div class="footer-social">
               <a href=""><i class="fab fa-twitter"></i></a>
@@ -20,16 +20,7 @@
             </div>
           </div>
         </div>
-        <div class="container copyright">
-          <div class="row">
-            <div class="col-md-6">
-              <p>&copy; <a href="#">Your Site Name</a>, All Right Reserved.</p>
-            </div>
-            <div class="col-md-6">
-              <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
-            </div>
-          </div>
-        </div>
+        <div class="container copyright"></div>
       </div>
     </div>
     <!-- Footer End -->

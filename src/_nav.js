@@ -15,18 +15,18 @@ export default [
   {
     component: 'CNavItem',
     name: 'پنل کاربری',
-    to: '/theme/user-panel',
+    to: '/panel/user-panel',
     icon: 'cil-user',
   },
   {
     component: 'CNavItem',
     name: 'پنل مربی',
-    to: '/theme/trainer-panel',
+    to: '/panel/trainer-panel',
     icon: 'cil-user',
   },
   {
     component: 'CNavTitle',
-    name: 'افزودن، ویرایش و حذف آیتم‌ها',
+    name: 'ادمین',
   },
   {
     component: 'CNavItem',

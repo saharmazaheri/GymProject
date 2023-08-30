@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="font-p">
+    <Headerapp />
     <!-- Page Header Start -->
     <div class="page-header">
       <div class="container">
@@ -8,8 +9,8 @@
             <h2>کافی شاپ</h2>
           </div>
           <div class="col-12">
-            <a href="">خانه</a>
-            <a href="">کافی شاپ</a>
+            <router-link to="/">خانه</router-link>
+            <router-link to="/coffee-shop">کافی شاپ</router-link>
           </div>
         </div>
       </div>
@@ -53,7 +54,7 @@
                 <br />
                 <a
                   class="btn btn-default check_out cursor-pointer"
-                  @click="AddProduct(item.id)"
+                  @click="AddProduct()"
                   ><i class="fa fa-shopping-cart"></i>
                   افـزودن به سبـد خریـد
                 </a>
@@ -64,41 +65,30 @@
       </div>
     </div>
     <!-- Service End -->
+    <Footerapp />
   </div>
 </template>
 
 <script>
+import Header from './shared/Header.vue'
+import Footer from './shared/Footer.vue'
 export default {
   data() {
     return {
       count: 1,
     }
   },
+  components: {
+    Headerapp: Header,
+    Footerapp: Footer,
+  },
   computed: {
     coffee() {
       return this.$store.getters.GetCoffee
     },
-    shopcart() {
-      return this.$store.getters.Getshopcart
-    },
-    Total() {
-      return this.$store.getters.GetTotal
-    },
   },
   methods: {
-    AddProduct(Lid) {
-      const zarb = this.coffee[Lid].price * this.count
-      let TotalPrice = 0
-      this.shopcart.push([
-        this.coffee[Lid].imge,
-        this.coffee[Lid].title,
-        this.coffee[Lid].price,
-        this.count,
-        zarb,
-        TotalPrice,
-      ])
-      TotalPrice = zarb + zarb
-
+    AddProduct() {
       alert('محصول با موفقیت به سبد خرید اضافه شد')
     },
   },
@@ -111,7 +101,7 @@ export default {
   background: #f0f0e9;
   border: medium none;
   color: #b2b2b2;
-  font-family: 'BYekan';
+  font-family: iransans;
   font-size: 12px;
   font-weight: 300;
   height: 35px;

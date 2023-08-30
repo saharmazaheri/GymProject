@@ -12,8 +12,15 @@ import DocsExample from '@/components/DocsExample'
 import { CSwitch, CButton } from '@coreui/vue'
 import '@coreui/coreui/dist/css/coreui.min.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './styles/bootstrap-rtl/bootstrap-rtl.css'
-// import '../src/assets/css/style.css'
+import '../src/assets/css/bootstrap.rtl.css'
+import '../src/assets/css/style.css'
+import '../src/assets/lib/animate/animate.min.css'
+import '../src/assets/lib/animate/animate.css'
+import '../src/assets/lib/flaticon/font/flaticon.css'
+import '../src/assets/lib/owlcarousel/assets/owl.carousel.min.css'
+import '../src/assets/lib/lightbox/css/lightbox.min.css'
+import '../src/assets/css/fonts.css'
+// import '../src/assets/css/bootstrap1.css'
 
 const app = createApp(App)
 app.use(store)

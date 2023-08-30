@@ -24,27 +24,23 @@ export const Mixin = {
       RePassword: '',
       Educational: '',
       selectEducational: '',
+      cardnumber: '',
+      cvv2: '',
+      month: '',
+      year: '',
+      securitycode: '',
+      Passwordcard: '',
     }
   },
   methods: {
     RegisterUser() {
-      const register = {
-        Name: this.Name,
-        Family: this.Family,
-        NationalCode: this.NationalCode,
-        Dateofbirth: this.Dateofbirth,
-        UserAddress: this.UserAddress,
-        PhoneNumber: this.PhoneNumber,
-        Email: this.Email,
-        Password: this.Password,
-        RePassword: this.RePassword,
-        Educational: this.Educational,
-        selectEducational: this.selectEducational,
-      }
-      this.$router.dispatch('RegisterUser', register)
+      alert('ثبت نام با موفقیت انجام شد')
     },
     LoginUser() {
-      this.$router.replace('/')
+      this.$router.replace('panel/user-panel')
+    },
+    Resume1() {
+      alert('اطلاعات با موفقیت ثبت شد')
     },
   },
   validations: {
@@ -60,8 +56,14 @@ export const Mixin = {
     },
     Email: { required, email, maxLength: maxLength(100) },
     Password: { minLength: minLength(6), required },
-    RePassword: { sameAs: sameAs('Password') },
+    RePassword: { sameAs: sameAs('Password'), required },
     Educational: { required },
     selectEducational: { required },
+    cardnumber: { required },
+    cvv2: { required },
+    month: { required },
+    year: { required },
+    securitycode: { required },
+    Passwordcard: {},
   },
 }

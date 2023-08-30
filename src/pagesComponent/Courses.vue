@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="font-p">
+    <Headerapp />
     <!-- Page Header Start -->
     <div class="page-header">
       <div class="container">
@@ -8,8 +9,8 @@
             <h2>دوره‌ها</h2>
           </div>
           <div class="col-12">
-            <a href="">خانه</a>
-            <a href="">دوره‌ها</a>
+            <router-link to="/">خانه</router-link>
+            <router-link to="/courses">دوره‌ها</router-link>
           </div>
         </div>
       </div>
@@ -27,21 +28,10 @@
             <p>دوره‌ها</p>
             <h2>مشخصات دوره‌ها</h2>
           </div>
-          <div class="row" dir="rtl">
-            <div class="col-12">
-              <ul id="class-filter">
-                <li data-filter="*" class="filter-active">همه دوره‌ها</li>
-                <li data-filter=".filter-1">عمومی</li>
-                <li data-filter=".filter-2">خصوصی</li>
-                <li data-filter=".filter-3">آزاد</li>
-              </ul>
-            </div>
-          </div>
         </div>
         <div class="row class-container">
           <div
             class="col-lg-4 col-md-6 col-sm-12 class-item wow fadeInUp"
-            :class="item.fillter"
             data-wow-delay="0.0s"
             v-for="item in courses"
             :key="item.numberOfSessions"
@@ -56,21 +46,49 @@
                 {{ item.price }}
               </p>
               <p>ظرفیت باقیمانده {{ item.Capacity }} نفر</p>
+              <br />
+              <button class="but-p">
+                <a
+                  class="btn btn-default check_out cursor-pointer"
+                  @click="AddCourses()"
+                  ><i class="fa fa-shopping-cart"></i>
+                  افـزودن به سبـد خریـد
+                </a>
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
     <!-- Class End -->
+    <Footerapp />
   </div>
 </template>
 
 <script>
+import Header from './shared/Header.vue'
+import Footer from './shared/Footer.vue'
 export default {
+  components: {
+    Headerapp: Header,
+    Footerapp: Footer,
+  },
   computed: {
     courses() {
       return this.$store.getters.GetCourses
     },
   },
+  methods: {
+    AddCourses() {
+      alert('دوره با موفقیت رزرو شد')
+    },
+  },
 }
 </script>
+<style>
+.but-p {
+  border: 1px black solid;
+  border-radius: 0.375rem;
+  background-color: #fde2e2;
+}
+</style>

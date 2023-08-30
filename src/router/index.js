@@ -12,6 +12,7 @@ import CoffeeShop from '../pagesComponent/CoffeeShop.vue'
 import TrainerPage from '../pagesComponent/TrainerPage.vue'
 import Resume from '../pagesComponent/Resume.vue'
 import CoffeeUserShopCart from '../pagesComponent/CoffeeUserShopCart.vue'
+import DargahPardakht from '../pagesComponent/DargahPardakht.vue'
 
 const routes = [
   {
@@ -60,6 +61,10 @@ const routes = [
     component: CoffeeUserShopCart,
   },
   {
+    path: '/dargah-pardakht',
+    component: DargahPardakht,
+  },
+  {
     path: '/',
     name: 'Home',
     component: DefaultLayout,
@@ -75,29 +80,29 @@ const routes = [
           import(/* webpackChunkName: "dashboard" */ '@/views/Dashboard.vue'),
       },
       {
-        path: '/theme/user-panel',
+        path: '/panel/user-panel',
         name: 'UserPanel',
-        component: () => import('@/views/theme/UserPanel.vue'),
+        component: () => import('@/views/panel/UserPanel.vue'),
       },
       {
-        path: '/theme/trainer-panel',
+        path: '/panel/trainer-panel',
         name: 'TrainerPanel',
-        component: () => import('@/views/theme/TrainerPanel.vue'),
+        component: () => import('@/views/panel/TrainerPanel.vue'),
       },
       {
         path: '/base/trainer-edit',
         name: 'TrainerEdit',
-        component: () => import('@/views/base/TrainerEdit.vue'),
+        component: () => import('@/views/admin/TrainerEdit.vue'),
       },
       {
         path: '/base/courses-edit',
         name: 'CoursesEdit',
-        component: () => import('@/views/base/CoursesEdit.vue'),
+        component: () => import('@/views/admin/CoursesEdit.vue'),
       },
       {
         path: '/base/coffe-shop-edit',
         name: 'CoffeShopEdit',
-        component: () => import('@/views/base/CoffeShopEdit.vue'),
+        component: () => import('@/views/admin/CoffeShopEdit.vue'),
       },
     ],
   },

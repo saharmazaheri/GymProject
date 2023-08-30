@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="font-p">
+    <Headerapp />
     <!-- Page Header Start -->
     <div class="page-header">
       <div class="container">
@@ -8,8 +9,8 @@
             <h2>مربیان</h2>
           </div>
           <div class="col-12">
-            <a href="">خانه</a>
-            <a href="">مربیان</a>
+            <router-link to="/">خانه</router-link>
+            <router-link to="/trainers">مربیان</router-link>
           </div>
         </div>
       </div>
@@ -119,11 +120,18 @@
       </div>
     </div>
     <!-- Class Timetable End -->
+    <Footerapp />
   </div>
 </template>
 
 <script>
+import Header from './shared/Header.vue'
+import Footer from './shared/Footer.vue'
 export default {
+  components: {
+    Headerapp: Header,
+    Footerapp: Footer,
+  },
   computed: {
     trainers() {
       return this.$store.getters.GetTrainers
