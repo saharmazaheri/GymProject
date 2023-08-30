@@ -30,7 +30,7 @@
         :progress="{ value: 75 }"
         text="تعداد کامنت‌ها"
         title="کامنت‌ها"
-        value="38"
+        value="5"
       />
     </CCol>
     <CCol :xs="3">

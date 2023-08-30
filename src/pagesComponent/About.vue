@@ -165,6 +165,3 @@ export default {
   },
 }
 </script>
-<style>
-@import '../assets/css/bootstrap1.css';
-</style>
