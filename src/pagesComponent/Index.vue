@@ -69,7 +69,7 @@
           data-wow-delay="0.1s"
         >
           <p>همه تلاشمون رو کردیم تا کامل‌ترین باشیم</p>
-          <h5>ویژگی‌های هیرو فیت</h5>
+          <h2>ویژگی‌های هیرو فیت</h2>
         </div>
         <div style="display: flex">
           <div class="index" style="margin-left: 15px">
@@ -123,12 +123,12 @@
         <div style="display: flex">
           <div>
             <div
-              class="section-header text-center wow zoomIn text-center"
+              class="section-header text-center wow zoomIn"
               data-wow-delay="0.1s"
               style="margin-top: 30px"
             >
               <p>معرفی کافی شاپ</p>
-              <h5>کافی شاپ هیرو</h5>
+              <h2>کافی شاپ هیرو</h2>
             </div>
             <div style="text-align: justify">
               <p>

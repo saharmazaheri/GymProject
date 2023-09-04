@@ -37,7 +37,7 @@ export const Mixin = {
       alert('ثبت نام با موفقیت انجام شد')
     },
     LoginUser() {
-      this.$router.replace('panel/user-panel')
+      this.$router.replace('/user-panel')
     },
     Resume1() {
       alert('اطلاعات با موفقیت ثبت شد')

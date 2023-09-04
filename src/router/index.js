@@ -12,6 +12,12 @@ import CoffeeShop from '../pagesComponent/CoffeeShop.vue'
 import TrainerPage from '../pagesComponent/TrainerPage.vue'
 import Resume from '../pagesComponent/Resume.vue'
 import DargahPardakht from '../pagesComponent/DargahPardakht.vue'
+import Dashboard from '@/views/Dashboard.vue'
+import UserPanel from '@/views/panel/UserPanel.vue'
+import TrainerPanel from '@/views/panel/TrainerPanel.vue'
+import TrainerEdit from '@/views/admin/TrainerEdit.vue'
+import CoursesEdit from '@/views/admin/CoursesEdit.vue'
+import CoffeeShopEdit from '@/views/admin/CoffeShopEdit.vue'
 
 const routes = [
   {
@@ -68,32 +74,32 @@ const routes = [
       {
         path: '/dashboard',
         name: 'داشبورد',
-        component: () => import('@/views/Dashboard.vue'),
+        component: Dashboard,
       },
       {
         path: '/user-panel',
         name: 'پنل کاربری',
-        component: () => import('@/views/panel/UserPanel.vue'),
+        component: UserPanel,
       },
       {
         path: '/trainer-panel',
         name: 'پنل مربی',
-        component: () => import('@/views/panel/TrainerPanel.vue'),
+        component: TrainerPanel,
       },
       {
         path: '/trainer-edit',
         name: 'مربیان',
-        component: () => import('@/views/admin/TrainerEdit.vue'),
+        component: TrainerEdit,
       },
       {
         path: '/courses-edit',
         name: 'دوره‌ها',
-        component: () => import('@/views/admin/CoursesEdit.vue'),
+        component: CoursesEdit,
       },
       {
         path: '/coffe-shop-edit',
         name: 'محصولات کافی شاپ',
-        component: () => import('@/views/admin/CoffeShopEdit.vue'),
+        component: CoffeeShopEdit,
       },
     ],
   },
