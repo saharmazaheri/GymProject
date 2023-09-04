@@ -8,7 +8,6 @@ import Mixin from './Mixins/Mixin.js'
 import CoreuiVue from '@coreui/vue'
 import CIcon from '@coreui/icons-vue'
 import { iconsSet as icons } from '@/assets/icons'
-import DocsExample from '@/components/DocsExample'
 import { CSwitch, CButton } from '@coreui/vue'
 import '@coreui/coreui/dist/css/coreui.min.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -20,7 +19,6 @@ import '../src/assets/lib/flaticon/font/flaticon.css'
 import '../src/assets/lib/owlcarousel/assets/owl.carousel.min.css'
 import '../src/assets/lib/lightbox/css/lightbox.min.css'
 import '../src/assets/css/fonts.css'
-// import '../src/assets/css/bootstrap1.css'
 
 const app = createApp(App)
 app.use(store)
@@ -32,6 +30,5 @@ app.provide('icons', icons)
 app.component('CIcon', CIcon)
 app.component('CButton', CButton)
 app.component('CSwitch', CSwitch)
-app.component('DocsExample', DocsExample)
 
 app.mount('#app')

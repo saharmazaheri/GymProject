@@ -95,7 +95,7 @@
                     </div>
                   </CRow>
                   <div class="text-left">
-                    <CButton class="button Bitem">ثبت محصول</CButton>
+                    <CButton class="button Bitem1">ثبت محصول</CButton>
                   </div>
                 </div>
               </CAccordionBody>
@@ -117,25 +117,3 @@ export default {
   },
 }
 </script>
-
-<style>
-.b-item {
-  background-color: #f6d6d5;
-}
-.h-item {
-  background-color: #625c82;
-  color: #fff;
-}
-.i-label {
-  width: 200px;
-  border: 2px #625c82 solid;
-}
-.Bitem {
-  display: inline-block;
-  background-color: #625c82;
-  margin: 1px 15px 0 5px;
-  padding: 8px 10px;
-  border-radius: 10px;
-  color: #ffffff;
-}
-</style>

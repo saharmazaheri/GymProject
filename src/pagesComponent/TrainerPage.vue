@@ -1,5 +1,5 @@
 <template>
-  <div class="font-p">
+  <div>
     <Headerapp />
     <!-- Page Header Start -->
     <div class="page-header">
@@ -17,18 +17,20 @@
     </div>
     <!-- Page Header End -->
 
+    <!-- Trainers biography Start -->
     <div class="about wow fadeInUp text-center" data-wow-delay="0.1s" dir="rtl">
       <div class="container">
         <div
           class="section-header text-center wow zoomIn"
           data-wow-delay="0.1s"
+          style="padding-left: 150px"
         >
           <p>اطلاعات مربی</p>
           <h2>سلام من {{ trainers[Lid].NameFamily }} هستم</h2>
         </div>
         <div class="row align-items-center">
           <div class="col-lg-5 col-md-6">
-            <div class="about-imge">
+            <div class="trainer-imge">
               <img :src="trainers[Lid].imge" alt="Image" />
             </div>
           </div>
@@ -40,8 +42,9 @@
         </div>
       </div>
     </div>
+    <!-- Trainers biography End -->
 
-    <!-- Blog Start -->
+    <!-- Movement training Start -->
     <div class="blog">
       <div class="container">
         <div
@@ -80,12 +83,17 @@
         </div>
       </div>
     </div>
-    <!-- Blog End -->
+    <!-- Movement training End -->
+
+    <!-- User opinion Start-->
     <div class="single" dir="rtl">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="single-comment wow fadeInUp" style="width: 800px">
+            <div
+              class="single-comment wow fadeInUp text-left"
+              style="width: 800px"
+            >
               <h4 class="headerSingle text-right">دیدگاه کاربران</h4>
               <ul class="comment-list text-right">
                 <li class="comment-item opinions-p">
@@ -165,6 +173,7 @@
         </div>
       </div>
     </div>
+    <!-- User opinion End-->
     <Footerapp />
   </div>
 </template>
@@ -197,21 +206,3 @@ export default {
   },
 }
 </script>
-
-<style>
-.about-imge {
-  position: relative;
-  height: 80%;
-}
-
-.about-imge img {
-  position: relative;
-  width: 50%;
-  height: 50%;
-  object-fit: cover;
-}
-
-.box {
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
-}
-</style>

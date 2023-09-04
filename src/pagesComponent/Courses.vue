@@ -1,5 +1,5 @@
 <template>
-  <div class="font-p">
+  <div>
     <Headerapp />
     <!-- Page Header Start -->
     <div class="page-header">
@@ -17,7 +17,7 @@
     </div>
     <!-- Page Header End -->
 
-    <!-- Class Start -->
+    <!-- Courses Start -->
     <div class="service">
       <div class="container">
         <div class="class">
@@ -29,7 +29,7 @@
             <h2>مشخصات دوره‌ها</h2>
           </div>
         </div>
-        <div class="row class-container">
+        <div class="row class-container" dir="rtl">
           <div
             class="col-lg-4 col-md-6 col-sm-12 class-item wow fadeInUp"
             data-wow-delay="0.0s"
@@ -60,7 +60,7 @@
         </div>
       </div>
     </div>
-    <!-- Class End -->
+    <!-- Courses End -->
     <Footerapp />
   </div>
 </template>
@@ -85,10 +85,3 @@ export default {
   },
 }
 </script>
-<style>
-.but-p {
-  border: 1px black solid;
-  border-radius: 0.375rem;
-  background-color: #fde2e2;
-}
-</style>

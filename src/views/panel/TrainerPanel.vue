@@ -48,7 +48,7 @@
             </div>
           </div>
           <div class="text-left">
-            <CButton class="button b-item">ویرایش اطلاعات</CButton>
+            <CButton class="button Bitem">ویرایش اطلاعات</CButton>
           </div>
         </div>
       </div>
@@ -68,7 +68,7 @@
               </p>
             </div>
             <div class="text-left">
-              <CButton class="button b-item">ویرایش بیوگرافی</CButton>
+              <CButton class="button Bitem">ویرایش بیوگرافی</CButton>
             </div>
           </div>
         </div>
@@ -107,7 +107,7 @@
             </div>
           </div>
           <div class="form-group col-12 text-left">
-            <CButton class="button b-item">ارسال برنامه</CButton>
+            <CButton class="button Bitem">ارسال برنامه</CButton>
           </div>
         </div>
       </div>
@@ -115,7 +115,7 @@
     <div id="userInfo" style="background-color: #f6d6d5">
       <div id="userInfo">
         <div class="col-12 mb-4">
-          <h4 class="title">سبد خرید</h4>
+          <h4 class="title">سبد خرید کافی شاپ</h4>
           <hr />
         </div>
         <table class="table table-secondary table-striped">
@@ -148,7 +148,7 @@
         </table>
         <p>مجموع: 380000 تومان</p>
         <div class="form-group col-12 text-left">
-          <CButton class="button b-item"
+          <CButton class="button Bitem"
             ><router-link
               to="/dargah-pardakht"
               @click="thePayment(380000)"
@@ -186,45 +186,3 @@ export default {
   },
 }
 </script>
-
-<style>
-.top-head {
-  background-color: #625c82;
-  height: 50px;
-  border-radius: 10px;
-}
-#userInfo {
-  width: 100%;
-  box-shadow: 0 0 13px 0 #0000006e;
-  border-radius: 10px;
-  margin: 30px 0;
-  position: relative;
-  z-index: 2;
-  background-color: #f7cac9;
-  color: #343148;
-  padding: 35px 25px;
-}
-.d-item {
-  display: inline-block;
-  background-color: #fff;
-  margin: 20px 15px 0 5px;
-  padding: 8px 10px;
-  border-radius: 10px;
-  color: #625c82;
-}
-.var {
-  font-size: 16px;
-}
-.val {
-  color: black;
-  font-size: 14px;
-}
-.b-item {
-  display: inline-block;
-  background-color: #625c82;
-  margin: 20px 15px 0 5px;
-  padding: 8px 10px;
-  border-radius: 10px;
-  color: #ffffff;
-}
-</style>

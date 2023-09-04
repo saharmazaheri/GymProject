@@ -1,5 +1,5 @@
 <template>
-  <div class="font-p">
+  <div>
     <Headerapp />
     <!-- Page Header Start -->
     <div class="page-header">
@@ -17,6 +17,7 @@
     </div>
     <!-- Page Header End -->
 
+    <!-- Resume Start -->
     <div class="contact">
       <div class="container">
         <div
@@ -165,6 +166,7 @@
         </div>
       </div>
     </div>
+    <!-- Resume End -->
     <Footerapp />
   </div>
 </template>
@@ -190,9 +192,3 @@ export default {
   },
 }
 </script>
-<style>
-.control-P {
-  padding: 20px;
-  border-bottom: solid #cccccc;
-}
-</style>

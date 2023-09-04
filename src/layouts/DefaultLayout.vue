@@ -8,7 +8,6 @@
           <router-view />
         </CContainer>
       </div>
-      <!-- <AppFooter /> -->
     </div>
   </div>
 </template>

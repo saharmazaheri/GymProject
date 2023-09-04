@@ -63,7 +63,7 @@
 import widgetstate from './dashboard/widgetstate.vue'
 import numberwomen from './dashboard/numberwomen.vue'
 import numbermen from './dashboard/numbermen'
-import ChartCoffeeShop from './charts/ChartCoffeeShop.vue'
+import ChartCoffeeShop from './dashboard/ChartCoffeeShop.vue'
 import numbercourses from './dashboard/numbercourses.vue'
 
 export default {

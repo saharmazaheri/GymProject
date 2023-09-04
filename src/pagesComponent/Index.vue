@@ -1,6 +1,6 @@
 <template>
-  <Headerapp />
-  <div class="font-p">
+  <div>
+    <Headerapp />
     <!-- Hero Start -->
     <div class="hero">
       <div class="container-fluid">
@@ -47,8 +47,8 @@
               <p>درباره هیرو</p>
               <h2>به هیرو خوش آمدید</h2>
             </div>
-            <div class="about-text">
-              <p dir="rtl">
+            <div class="about-text text-left">
+              <p>
                 تناسب اندام به معنای بهتر بودن از شخص دیگر نیست ... بلکه بهتر
                 بودن از گذشته است. تیم بزرگ هیرو فیت با در دست داشتن متخصصین با
                 تجربه و دلسوز به شما عزیزان کمک خواهد کرد تا از گذشته خود پیشی
@@ -69,7 +69,7 @@
           data-wow-delay="0.1s"
         >
           <p>همه تلاشمون رو کردیم تا کامل‌ترین باشیم</p>
-          <h5>ویژگی‌های برنامه ورزشی هیرو</h5>
+          <h5>ویژگی‌های هیرو فیت</h5>
         </div>
         <div style="display: flex">
           <div class="index" style="margin-left: 15px">
@@ -148,9 +148,8 @@
         </div>
       </div>
     </div>
+    <Footerapp />
   </div>
-
-  <Footerapp />
 </template>
 
 <script>

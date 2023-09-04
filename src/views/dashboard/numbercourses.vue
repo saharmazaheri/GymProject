@@ -5,7 +5,7 @@
         class="border-start border-start-3 border-start-success py-1 px-3 mb-3"
       >
         <div class="text-medium-emphasis small">دوره‌های عمومی</div>
-        <div class="fs-5 fw-semibold">646 نفر</div>
+        <div class="fs-5 fw-semibold">280 نفر</div>
       </div>
     </CCol>
     <CCol :sm="6">
@@ -13,7 +13,7 @@
         class="border-start border-start-3 border-start-primary py-1 px-3 mb-3"
       >
         <div class="text-medium-emphasis small">دوره‌های خصوصی</div>
-        <div class="fs-5 fw-semibold">124 نفر</div>
+        <div class="fs-5 fw-semibold">174 نفر</div>
       </div>
     </CCol>
   </CRow>

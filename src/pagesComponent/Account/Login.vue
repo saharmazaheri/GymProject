@@ -1,5 +1,5 @@
 <template>
-  <div class="font-p">
+  <div>
     <Headerapp />
     <!-- Page Header Start -->
     <div class="page-header">
@@ -17,7 +17,7 @@
     </div>
     <!-- Page Header End -->
 
-    <!-- sign in -->
+    <!-- Login Start -->
     <div class="contact">
       <div class="container">
         <div
@@ -78,7 +78,7 @@
         </div>
       </div>
     </div>
-    <!-- sign in -->
+    <!-- Login End -->
     <Footerapp />
   </div>
 </template>
@@ -99,10 +99,3 @@ export default {
   mixins: [Mixin],
 }
 </script>
-
-<style>
-.invalid {
-  box-shadow: 0 0 5px red;
-  background-color: lightpink;
-}
-</style>

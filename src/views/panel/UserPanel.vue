@@ -55,7 +55,7 @@
           </div>
           <p class="text-center">تعداد سفارشات: 0</p>
           <div class="form-group col-12 text-left">
-            <CButton class="button b-item">دریافت برنامه</CButton>
+            <CButton class="button Bitem">دریافت برنامه</CButton>
           </div>
         </div>
       </div>
@@ -93,7 +93,7 @@
               در حال حاضر هیچ دوره‌ پرداخت نشده وجود ندارد
             </p>
             <div class="form-group col-12 text-left">
-              <CButton class="button b-item"
+              <CButton class="button Bitem"
                 ><router-link
                   to="/dargah-pardakht"
                   @click="thePayment(0)"
@@ -152,7 +152,7 @@
           </table>
           <p>مجموع: 333000 تومان</p>
           <div class="form-group col-12 text-left">
-            <CButton class="button b-item"
+            <CButton class="button Bitem"
               ><router-link
                 to="/dargah-pardakht"
                 @click="thePayment(333000)"
@@ -190,47 +190,10 @@ export default {
       return this.$store.getters.Getshopcart
     },
   },
+  methods: {
+    thePayment(pricee) {
+      this.shopcart.push(pricee)
+    },
+  },
 }
 </script>
-
-<style>
-.top-head {
-  background-color: #625c82;
-  height: 50px;
-  border-radius: 10px;
-}
-#userInfo {
-  width: 100%;
-  box-shadow: 0 0 13px 0 #0000006e;
-  border-radius: 10px;
-  margin: 30px 0;
-  position: relative;
-  z-index: 2;
-  background-color: #f7cac9;
-  color: #343148;
-  padding: 35px 25px;
-}
-.d-item {
-  display: inline-block;
-  background-color: #fff;
-  margin: 20px 15px 0 5px;
-  padding: 8px 10px;
-  border-radius: 10px;
-  color: #625c82;
-}
-.var {
-  font-size: 16px;
-}
-.val {
-  color: black;
-  font-size: 14px;
-}
-.b-item {
-  display: inline-block;
-  background-color: #625c82;
-  margin: 20px 15px 0 5px;
-  padding: 8px 10px;
-  border-radius: 10px;
-  color: #ffffff;
-}
-</style>

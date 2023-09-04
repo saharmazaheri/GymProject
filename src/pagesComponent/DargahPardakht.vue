@@ -15,6 +15,8 @@
       </div>
     </div>
     <!-- Page Header End -->
+
+    <!-- Internet payment Start -->
     <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
       <p>درگاه پرداخت</p>
       <h2>پرداخت اینترنتی به پرداخت ملت</h2>
@@ -130,15 +132,7 @@
                       @blur="v$.Passwordcard.$touch()"
                       :class="{ invalid: v$.Passwordcard.$error }"
                     />
-                    <button
-                      type="button"
-                      class="btn btn-perches"
-                      style="
-                        background-color: #343148;
-                        margin-top: 5px;
-                        color: aliceblue;
-                      "
-                    >
+                    <button type="button" class="btn btn-perches pas-poya">
                       دریافت رمز پویا
                     </button>
                   </div>
@@ -202,7 +196,6 @@
               <div class="card-body">
                 <div class="merchant-container">
                   <div class="col-lg-12 col-sm-4 merchant-logo">
-                    <!--<img class=" " src="img/sample/merchant-logo.png" alt="merchantlogo">-->
                     <img src="../assets/img/hero.png" />
                   </div>
                   <br />
@@ -224,6 +217,7 @@
         </div>
       </div>
     </div>
+    <!-- Internet payment Start -->
   </div>
 </template>
 <script>
@@ -241,37 +235,3 @@ export default {
   },
 }
 </script>
-
-<style>
-.invalid {
-  box-shadow: 0 0 5px red;
-  background-color: lightpink;
-}
-.card-D1 {
-  padding: 30px 20px;
-}
-.card-D2 {
-  padding: 30px 50px;
-  width: 500px;
-}
-.card-D3 {
-  padding: 30px 50px;
-  width: 250px;
-}
-.card-D4 {
-  width: 500px;
-  padding: 10px 50px;
-}
-.card-I {
-  width: 400px;
-  height: 40px;
-  border: 3px rgba(84, 84, 218, 0.271) solid;
-  border-radius: 0.375rem;
-}
-.card-I1 {
-  width: 100px;
-  height: 40px;
-  border: 3px rgba(84, 84, 218, 0.271) solid;
-  border-radius: 0.375rem;
-}
-</style>

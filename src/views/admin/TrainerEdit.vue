@@ -3,7 +3,7 @@
     <CCol>
       <CCard class="mb-4">
         <CCardHeader class="h-item">
-          <small>افزودن، ویرایش و حذف</small> <strong>مربی‌ها</strong>
+          <small>افزودن، ویرایش و حذف</small> <strong>مربیان</strong>
         </CCardHeader>
         <CCardBody class="b-item">
           <CAccordion always-open>
@@ -185,33 +185,3 @@ export default {
   },
 }
 </script>
-
-<style>
-.b-item {
-  background-color: #f6d6d5;
-}
-.h-item {
-  background-color: #625c82;
-  color: #fff;
-}
-.i-label {
-  width: 200px;
-  border: 2px #625c82 solid;
-}
-.a-form {
-  display: flex;
-  justify-content: space-around;
-  align-items: right;
-  flex-flow: row wrap;
-  width: 100%;
-  gap: 15px;
-}
-.Bitem {
-  display: inline-block;
-  background-color: #625c82;
-  margin: 20px 15px 0 5px;
-  padding: 8px 10px;
-  border-radius: 10px;
-  color: #ffffff;
-}
-</style>

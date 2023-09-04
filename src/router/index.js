@@ -11,7 +11,6 @@ import Trainers from '../pagesComponent/Trainers.vue'
 import CoffeeShop from '../pagesComponent/CoffeeShop.vue'
 import TrainerPage from '../pagesComponent/TrainerPage.vue'
 import Resume from '../pagesComponent/Resume.vue'
-import CoffeeUserShopCart from '../pagesComponent/CoffeeUserShopCart.vue'
 import DargahPardakht from '../pagesComponent/DargahPardakht.vue'
 
 const routes = [
@@ -57,51 +56,43 @@ const routes = [
     component: Resume,
   },
   {
-    path: '/CoffeeUserShopCart',
-    component: CoffeeUserShopCart,
-  },
-  {
     path: '/dargah-pardakht',
     component: DargahPardakht,
   },
   {
     path: '/',
-    name: 'Home',
+    name: 'خانه',
     component: DefaultLayout,
     redirect: '/dashboard',
     children: [
       {
         path: '/dashboard',
-        name: 'Dashboard',
-        // route level code-splitting
-        // this generates a separate chunk (about.[hash].js) for this route
-        // which is lazy-loaded when the route is visited.
-        component: () =>
-          import(/* webpackChunkName: "dashboard" */ '@/views/Dashboard.vue'),
+        name: 'داشبورد',
+        component: () => import('@/views/Dashboard.vue'),
       },
       {
-        path: '/panel/user-panel',
-        name: 'UserPanel',
+        path: '/user-panel',
+        name: 'پنل کاربری',
         component: () => import('@/views/panel/UserPanel.vue'),
       },
       {
-        path: '/panel/trainer-panel',
-        name: 'TrainerPanel',
+        path: '/trainer-panel',
+        name: 'پنل مربی',
         component: () => import('@/views/panel/TrainerPanel.vue'),
       },
       {
-        path: '/base/trainer-edit',
-        name: 'TrainerEdit',
+        path: '/trainer-edit',
+        name: 'مربیان',
         component: () => import('@/views/admin/TrainerEdit.vue'),
       },
       {
-        path: '/base/courses-edit',
-        name: 'CoursesEdit',
+        path: '/courses-edit',
+        name: 'دوره‌ها',
         component: () => import('@/views/admin/CoursesEdit.vue'),
       },
       {
-        path: '/base/coffe-shop-edit',
-        name: 'CoffeShopEdit',
+        path: '/coffe-shop-edit',
+        name: 'محصولات کافی شاپ',
         component: () => import('@/views/admin/CoffeShopEdit.vue'),
       },
     ],

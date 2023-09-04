@@ -34,7 +34,7 @@
         <span class="val"> استان اصفهان... </span>
       </div>
       <div class="text-left">
-        <CButton class="button b-item">ویرایش اطلاعات</CButton>
+        <CButton class="button Bitem">ویرایش اطلاعات</CButton>
       </div>
     </div>
   </div>

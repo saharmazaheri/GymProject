@@ -1,5 +1,5 @@
 <template>
-  <div class="font-p">
+  <div>
     <Headerapp />
     <!-- Page Header Start -->
     <div class="page-header">
@@ -45,12 +45,7 @@
               <br />
               <span>
                 <label> تعداد </label>
-                <input
-                  type="text"
-                  class="search_box"
-                  v-model="count"
-                  style="width: 80px"
-                />
+                <input type="text" v-model="count" style="width: 80px" />
                 <br />
                 <a
                   class="btn btn-default check_out cursor-pointer"
@@ -94,21 +89,3 @@ export default {
   },
 }
 </script>
-
-<style>
-.search_box input {
-  text-align: right;
-  background: #f0f0e9;
-  border: medium none;
-  color: #b2b2b2;
-  font-family: iransans;
-  font-size: 12px;
-  font-weight: 300;
-  height: 35px;
-  outline: medium none;
-  padding-right: 10px;
-  width: 155px;
-  background-repeat: no-repeat;
-  background-position: 10px;
-}
-</style>

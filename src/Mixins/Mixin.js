@@ -64,6 +64,6 @@ export const Mixin = {
     month: { required },
     year: { required },
     securitycode: { required },
-    Passwordcard: {},
+    Passwordcard: { required },
   },
 }

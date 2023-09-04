@@ -15,13 +15,13 @@ export default [
   {
     component: 'CNavItem',
     name: 'پنل کاربری',
-    to: '/panel/user-panel',
+    to: '/user-panel',
     icon: 'cil-user',
   },
   {
     component: 'CNavItem',
     name: 'پنل مربی',
-    to: '/panel/trainer-panel',
+    to: '/trainer-panel',
     icon: 'cil-user',
   },
   {
@@ -31,36 +31,19 @@ export default [
   {
     component: 'CNavItem',
     name: 'مربی‌ها',
-    to: '/base/trainer-edit',
+    to: '/trainer-edit',
     icon: 'cil-pencil',
   },
   {
     component: 'CNavItem',
     name: 'دوره‌ها',
-    to: '/base/courses-edit',
+    to: '/courses-edit',
     icon: 'cil-pencil',
   },
   {
     component: 'CNavItem',
     name: 'کافی شاپ',
-    to: '/base/coffe-shop-edit',
+    to: '/coffe-shop-edit',
     icon: 'cil-pencil',
   },
-
-  // {
-  //   component: 'CNavItem',
-  //   name: 'Download CoreUI',
-  //   href: 'http://coreui.io/vue/',
-  //   icon: { name: 'cil-cloud-download', class: 'text-white' },
-  //   _class: 'bg-success text-white',
-  //   target: '_blank'
-  // },
-  // {
-  //   component: 'CNavItem',
-  //   name: 'Try CoreUI PRO',
-  //   href: 'http://coreui.io/pro/vue/',
-  //   icon: { name: 'cil-layers', class: 'text-white' },
-  //   _class: 'bg-danger text-white',
-  //   target: '_blank'
-  // }
 ]

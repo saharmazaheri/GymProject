@@ -1,4 +1,4 @@
-<template class="font-p">
+<template>
   <footer>
     <!-- Footer Start -->
     <div class="footer wow fadeIn" data-wow-delay="0.3s">

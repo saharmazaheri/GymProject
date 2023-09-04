@@ -1,5 +1,5 @@
 <template>
-  <div class="font-p">
+  <div>
     <Headerapp />
     <!-- Page Header Start -->
     <div class="page-header">
@@ -17,7 +17,7 @@
     </div>
     <!-- Page Header End -->
 
-    <!-- Single Post Start-->
+    <!-- User opinion Start-->
 
     <div class="single" dir="rtl">
       <div class="container">
@@ -142,7 +142,7 @@
               <h4 class="headerSingle">دیدگاه خود را ثبت کنید</h4>
               <form>
                 <div class="form-group">
-                  <label for="name">*نام</label>
+                  <label for="name">*نام و نام خانوادگی</label>
                   <input type="text" class="form-control formP" />
                 </div>
                 <div class="form-group">
@@ -166,7 +166,7 @@
         </div>
       </div>
     </div>
-    <!-- Single Post End-->
+    <!-- User opinion End-->
     <Footerapp />
   </div>
 </template>

@@ -6,9 +6,9 @@ body {
   background: #ffffff;
   font-family: iransans;
 }
-.font-p {
+/* .font-p {
   font-family: iransans;
-}
+} */
 
 h1,
 h2,
@@ -263,7 +263,14 @@ a:focus {
     box-shadow: none;
   }
 }
-
+.headerP {
+  position: fixed !important;
+  top: 0 !important;
+  right: 0 !important;
+  left: 0 !important;
+  z-index: 1030 !important;
+  height: 70px;
+}
 /*******************************/
 /********** Hero CSS ***********/
 /*******************************/
@@ -297,6 +304,7 @@ a:focus {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+  padding-right: 40px;
 }
 
 .hero .hero-text h1 {
@@ -804,6 +812,11 @@ a:focus {
 .class .class-meta p:first-child {
   margin-right: 10px;
 }
+.but-p {
+  border: 1px black solid;
+  border-radius: 0.375rem;
+  background-color: #fde2e2;
+}
 
 /*******************************/
 /********* Pricing CSS *********/
@@ -1102,7 +1115,20 @@ a:focus {
 .team .team-text p {
   margin: 0;
 }
+.box {
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+}
+.trainer-imge {
+  position: relative;
+  height: 80%;
+}
 
+.trainer-imge img {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
 /*******************************/
 /******* Testimonial CSS *******/
 /*******************************/
@@ -1470,6 +1496,10 @@ a:focus {
   font-size: 17px;
   color: #191919;
 }
+.control-P {
+  padding: 20px;
+  border-bottom: solid #cccccc;
+}
 
 /*******************************/
 /******* Single Post CSS *******/
@@ -1689,7 +1719,6 @@ a:focus {
   margin-bottom: 3px;
   color: #64c4e7;
 }
-
 
 .single .comment-text span {
   display: block;
@@ -2154,4 +2183,125 @@ a:focus {
 
   border-radius: 50%;
   transition: all 200ms;
+}
+.invalid {
+  box-shadow: 0 0 5px red;
+  background-color: lightpink;
+}
+
+/*******************************/
+/********* payment CSS **********/
+/*******************************/
+.card-D1 {
+  padding: 30px 20px;
+}
+.card-D2 {
+  padding: 30px 50px;
+  width: 500px;
+}
+.card-D3 {
+  padding: 30px 50px;
+  width: 250px;
+}
+.card-D4 {
+  width: 500px;
+  padding: 10px 50px;
+}
+.card-I {
+  width: 400px;
+  height: 40px;
+  border: 3px rgba(84, 84, 218, 0.271) solid;
+  border-radius: 0.375rem;
+}
+.card-I1 {
+  width: 100px;
+  height: 40px;
+  border: 3px rgba(84, 84, 218, 0.271) solid;
+  border-radius: 0.375rem;
+}
+.pas-poya {
+  background-color: #343148;
+  margin-top: 5px;
+  color: aliceblue;
+}
+/*******************************/
+/********* UserPanel CSS *******/
+/*******************************/
+.top-head {
+  background-color: #625c82;
+  height: 50px;
+  border-radius: 10px;
+}
+#userInfo {
+  width: 100%;
+  box-shadow: 0 0 13px 0 #0000006e;
+  border-radius: 10px;
+  margin: 30px 0;
+  position: relative;
+  z-index: 2;
+  background-color: #f7cac9;
+  color: #343148;
+  padding: 35px 25px;
+}
+.d-item {
+  display: inline-block;
+  background-color: #fff;
+  margin: 20px 15px 0 5px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  color: #625c82;
+}
+.var {
+  font-size: 16px;
+}
+.val {
+  color: black;
+  font-size: 14px;
+}
+.b-item {
+  display: inline-block;
+  background-color: #625c82;
+  margin: 20px 15px 0 5px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+/*******************************/
+/********* Admin CSS *******/
+/*******************************/
+.b-item {
+  background-color: #f6d6d5;
+}
+.h-item {
+  background-color: #625c82;
+  color: #fff;
+}
+.i-label {
+  width: 200px;
+  border: 2px #625c82 solid;
+}
+.a-form {
+  display: flex;
+  justify-content: space-around;
+  align-items: right;
+  flex-flow: row wrap;
+  width: 100%;
+  gap: 15px;
+}
+.Bitem {
+  display: inline-block;
+  background-color: #625c82;
+  margin: 20px 15px 0 5px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+.Bitem1 {
+  display: inline-block;
+  background-color: #625c82;
+  margin: 1px 15px 0 5px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  color: #ffffff;
 }
