@@ -35,7 +35,9 @@
             :key="item.id"
           >
             <div class="service-item active">
-              <div class="service-icoon"></div>
+              <div class="service-icoon">
+                <img :src="item.imge" />
+              </div>
               <h3>{{ item.title }}</h3>
               <p>( {{ item.comments }} )</p>
               <br />
