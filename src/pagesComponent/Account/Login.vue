@@ -9,8 +9,8 @@
             <h2>ورود</h2>
           </div>
           <div class="col-12">
-            <router-link to="/">خانه</router-link>
-            <router-link to="/login">ورود</router-link>
+            <router-link to="/"> خانه </router-link>
+            <router-link to="/login"> ورود </router-link>
           </div>
         </div>
       </div>

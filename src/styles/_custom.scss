@@ -1,24 +1,36 @@
 // Here you can add other styles
 @media (min-width: 768px) {
-    .sidebar.sidebar-fixed {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        z-index: 1030;
-    }
-    html:not([dir=rtl]) .me-auto {
-        margin-left: 0 !important;
+  body{
+    direction: rtl;
+  }
+  .sidebar.sidebar-fixed {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      z-index: 1030;
+  }
+  html:not([dir=rtl]) .sidebar.sidebar-fixed:not(.sidebar-end) {
+      right: 0;
+  }
+  *[dir=rtl] .sidebar.sidebar-fixed:not(.sidebar-end) {
+      right: 0;
+  }
+  html:not([dir=rtl]) .sidebar.sidebar-fixed.sidebar-end {
+      right: 0;
+  }
+  *[dir=rtl] .sidebar.sidebar-fixed.sidebar-end {
+      right: 0;
+  }
+  }
+  html:not([dir=rtl]) .me-auto {
+      margin-right: 0 !important;
     }
     *[dir=rtl] .me-auto {
-        margin-left: auto !important;
-    }
-    html:not([dir=rtl]) .wrapper {
-        padding-left: var(--cui-sidebar-occupy-start, 0);
-    }
+      margin-left: auto !important;
     }
     @media (prefers-reduced-motion: reduce) {
         .chartjs-tooltip {
-            transition: none;
+          transition: none;
         }
         .chartjs-tooltip-header {
           margin-bottom: 0.5rem;
@@ -37,10 +49,10 @@
           will-change: auto;
           transition: padding 0.15s;
         }
-        html:not([dir=rtl]) .wrapper {
+        html:not([dir='rtl']) .wrapper {
           padding-left: var(--cui-sidebar-occupy-start, 0);
         }
-        *[dir=rtl] .wrapper {
+        *[dir='rtl'] .wrapper {
           padding-left: var(--cui-sidebar-occupy-start, 0);
         }
-    }
+      }

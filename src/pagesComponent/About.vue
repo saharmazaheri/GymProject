@@ -9,8 +9,8 @@
             <h2>درباره‌ی ما</h2>
           </div>
           <div class="col-12">
-            <router-link to="/">خانه</router-link>
-            <router-link to="/AboutUs">درباره‌ما</router-link>
+            <router-link to="/"> خانه </router-link>
+            <router-link to="/AboutUs"> درباره‌ما </router-link>
           </div>
         </div>
       </div>

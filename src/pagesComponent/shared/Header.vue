@@ -2,8 +2,8 @@
   <header>
     <!-- Nav Bar Start -->
     <div
-      style="background-color: #343148 !important"
-      class="headerP navbar navbar-expand-lg bg-dark navbar-dark d-none d-md-block font-p"
+      style="background-color: #343148 !important; direction: ltr"
+      class="headerP navbar navbar-expand-lg bg-dark navbar-dark d-none d-md-block"
     >
       <div class="container-fluid navbar-nav ml-auto" style="padding: 0px 0px">
         <router-link to="/login" active-class="active" class="nav-item nav-link"

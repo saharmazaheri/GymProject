@@ -9,8 +9,8 @@
             <h2>دیدگاه کاربران</h2>
           </div>
           <div class="col-12">
-            <router-link to="/">خانه</router-link>
-            <router-link to="/user-opinion">دیدگاه کاربران</router-link>
+            <router-link to="/"> خانه </router-link>
+            <router-link to="/user-opinion"> دیدگاه کاربران </router-link>
           </div>
         </div>
       </div>
@@ -28,18 +28,21 @@
               style="border: 1px #343148 solid"
             >
               <h4 class="headerSingle">دیدگاه‌ها</h4>
-              <ul class="comment-list text-right">
+              <ul
+                class="comment-list text-right"
+                v-for="item1 in Opinios"
+                :key="item1.id"
+              >
                 <li class="comment-item opinions-p">
                   <div class="comment-body">
                     <div class="comment-img">
                       <img src="../assets/img/opinions/user.png" />
                     </div>
                     <div class="comment-text text-right">
-                      <h3>علی</h3>
-                      <span> 10:15 1402/01/29</span>
+                      <h3>{{ item1.name }}</h3>
+                      <span> {{ item1.time }} {{ item1.date }}</span>
                       <p>
-                        سلام و خسته نباشید خدمت تمامی کارکنان مجموعه، من از تمام
-                        بخش‌ها راضی بودم واقعاعالیه
+                        {{ item1.commentU }}
                       </p>
                       <button class="btn">پاسخ</button>
                     </div>
@@ -49,95 +52,27 @@
                     <li class="comment-item">
                       <div class="comment-body">
                         <div class="comment-img">
-                          <img src="../assets/img/opinions/support.png" />
+                          <img :src="this.Support[item1.id].imge" />
                         </div>
                         <div class="comment-textP">
-                          <h3>پاسخ پشتیبان به علی</h3>
-                          <p><span>12:00 1402/02/01</span></p>
+                          <h3>پاسخ پشتیبان به {{ item1.name }}</h3>
                           <p>
-                            دورد به شما کاربر گرامی باعث افتخار ماست که میزبان
-                            خوبی برای شما بوده‌ایم❤
+                            <span
+                              >{{ this.Support[item1.id].time }}
+                              {{ this.Support[item1.id].date }}</span
+                            >
                           </p>
-                          <a class="btn" href="">پاسخ</a>
+                          <p>
+                            {{ this.Support[item1.id].commentS }}
+                          </p>
                         </div>
                       </div>
                     </li>
                   </ul>
                 </li>
                 <hr class="hr-P" />
-                <li class="comment-item opinions-p">
-                  <div class="comment-body">
-                    <div class="comment-img">
-                      <img src="../assets/img/opinions/user.png" />
-                    </div>
-                    <div class="comment-text text-right">
-                      <h3>مهسا</h3>
-                      <span> 21:35 1402/03/05</span>
-                      <p>
-                        سلام و وقت بخیر، ای کاش برای بانوان سانس بعدازظهر هم
-                        اضافه می‌کردید.
-                      </p>
-                      <button class="btn">پاسخ</button>
-                    </div>
-                  </div>
-                  <hr class="hr-P" style="margin-right: 80px" />
-                  <ul class="comment-child">
-                    <li class="comment-item">
-                      <div class="comment-body">
-                        <div class="comment-img">
-                          <img src="../assets/img/opinions/support.png" />
-                        </div>
-                        <div class="comment-textP">
-                          <h3>پاسخ پشتیبان به مهسا</h3>
-                          <p><span>13:01 1402/03/06</span></p>
-                          <p>
-                            سلام متاسفانه تایم‌ها پر هستند ولی سعیمان را خواهیم
-                            کرد.
-                          </p>
-                          <a class="btn" href="">پاسخ</a>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-                <hr class="hr-P" />
-                <li class="comment-item opinions-p">
-                  <div class="comment-body">
-                    <div class="comment-img">
-                      <img src="../assets/img/opinions/user.png" />
-                    </div>
-                    <div class="comment-text text-right">
-                      <h3>سارا</h3>
-                      <span> 10:30 1402/05/25</span>
-                      <p>
-                        سلام و وقت بخیر خدمت شما، کافی شاپ چه ساعاتی باز است؟
-                      </p>
-                      <button class="btn">پاسخ</button>
-                    </div>
-                  </div>
-                  <hr class="hr-P" style="margin-right: 80px" />
-                  <ul class="comment-child">
-                    <li class="comment-item">
-                      <div class="comment-body">
-                        <div class="comment-img">
-                          <img src="../assets/img/opinions/support.png" />
-                        </div>
-                        <div class="comment-textP">
-                          <h3>پاسخ پشتیبان به سارا</h3>
-                          <p><span>14:00 1402/05/26</span></p>
-                          <p>
-                            سلام از 9 صبح تا 12 ظهر و از 17 بعداز ظهر تا 20 شب.
-                          </p>
-                          <a class="btn" href="">پاسخ</a>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
               </ul>
-              <br />
             </div>
-            <br />
             <div class="comment-form wow fadeInUp text-right">
               <h4 class="headerSingle">دیدگاه خود را ثبت کنید</h4>
               <form>
@@ -179,6 +114,14 @@ export default {
   components: {
     Headerapp: Header,
     Footerapp: Footer,
+  },
+  computed: {
+    Opinios() {
+      return this.$store.getters.GetOpinios
+    },
+    Support() {
+      return this.$store.getters.GetSupport
+    },
   },
 }
 </script>

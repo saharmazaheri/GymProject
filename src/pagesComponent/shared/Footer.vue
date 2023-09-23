@@ -7,7 +7,7 @@
           <div class="footer-info">
             <a href="" class="footer-logo">H<span>ero</span> fit</a>
             <h3>اصفهان خیابان هزارجریب</h3>
-            <div class="footer-menu">
+            <div class="footer-menu" dir="ltr">
               <p>+031 3456 6789</p>
               <p>herofit@gmail.com</p>
             </div>

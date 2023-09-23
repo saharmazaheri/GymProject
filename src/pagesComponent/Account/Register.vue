@@ -9,8 +9,8 @@
             <h2>ثبت نام</h2>
           </div>
           <div class="col-12">
-            <router-link to="/">خانه</router-link>
-            <router-link to="/register">ثبت نام</router-link>
+            <router-link to="/"> خانه </router-link>
+            <router-link to="/register"> ثبت نام </router-link>
           </div>
         </div>
       </div>

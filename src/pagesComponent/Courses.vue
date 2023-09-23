@@ -9,8 +9,8 @@
             <h2>دوره‌ها</h2>
           </div>
           <div class="col-12">
-            <router-link to="/">خانه</router-link>
-            <router-link to="/courses">دوره‌ها</router-link>
+            <router-link to="/"> خانه </router-link>
+            <router-link to="/courses"> دوره‌ها </router-link>
           </div>
         </div>
       </div>

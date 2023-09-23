@@ -9,8 +9,8 @@
             <h2>کافی شاپ</h2>
           </div>
           <div class="col-12">
-            <router-link to="/">خانه</router-link>
-            <router-link to="/coffee-shop">کافی شاپ</router-link>
+            <router-link to="/"> خانه </router-link>
+            <router-link to="/coffee-shop"> کافی شاپ </router-link>
           </div>
         </div>
       </div>
@@ -35,17 +35,15 @@
             :key="item.id"
           >
             <div class="service-item active">
-              <div class="service-icoon">
-                <img :src="item.imge" alt="Image" />
-              </div>
+              <div class="service-icoon"></div>
               <h3>{{ item.title }}</h3>
               <p>( {{ item.comments }} )</p>
               <br />
               <p>{{ item.price }} تومان</p>
               <br />
               <span>
-                <label> تعداد </label>
-                <input type="text" v-model="count" style="width: 80px" />
+                <label style="margin-left: 5px"> تعداد </label>
+                <input type="text" style="width: 60px" />
                 <br />
                 <a
                   class="btn btn-default check_out cursor-pointer"
@@ -68,11 +66,6 @@
 import Header from './shared/Header.vue'
 import Footer from './shared/Footer.vue'
 export default {
-  data() {
-    return {
-      count: 1,
-    }
-  },
   components: {
     Headerapp: Header,
     Footerapp: Footer,

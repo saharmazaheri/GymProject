@@ -1,7 +1,7 @@
 const state = {
   trainers: [
     {
-      imge: require('../../assets/img/trainer/woman/w-1.png'),
+      imge: 'https://s6.uupload.ir/files/w-1_4c4.png',
       type: 'عمومی',
       field: 'بدنسازی',
       NameFamily: 'عاطفه فدایی',
@@ -10,7 +10,7 @@ const state = {
       id: '0',
     },
     {
-      imge: require('../../assets/img/trainer/woman/w-2.jpg'),
+      imge: 'https://s6.uupload.ir/files/w-22_qfr7.png',
       type: 'خصوصی',
       field: 'بدنسازی',
       NameFamily: 'لیلا محمدی',
@@ -19,7 +19,7 @@ const state = {
       id: '1',
     },
     {
-      imge: require('../../assets/img/trainer/woman/w-3.jpg'),
+      imge: 'https://s6.uupload.ir/files/w-3_sol1.jpg',
       type: 'عمومی',
       field: 'بدنسازی',
       NameFamily: 'الیسا جعفری',
@@ -28,7 +28,7 @@ const state = {
       id: '2',
     },
     {
-      imge: require('../../assets/img/trainer/woman/w-4.jpg'),
+      imge: 'https://s6.uupload.ir/files/w-4_b125.jpg',
       type: 'عمومی',
       field: 'بدنسازی',
       NameFamily: 'مهسا سلطانی',
@@ -37,7 +37,7 @@ const state = {
       id: '3',
     },
     {
-      imge: require('../../assets/img/trainer/woman/w-5.jpg'),
+      imge: 'https://s6.uupload.ir/files/w-5_s29j.jpg',
       type: 'خصوصی',
       field: 'بدنسازی',
       NameFamily: 'فاطمه ابراهیمی',
@@ -46,7 +46,7 @@ const state = {
       id: '4',
     },
     {
-      imge: require('../../assets/img/trainer/woman/w-6.jpg'),
+      imge: 'https://s6.uupload.ir/files/w-6_b4vr.jpg',
       type: 'خصوصی',
       field: 'بدنسازی',
       NameFamily: 'مریم حسینی',
@@ -55,7 +55,7 @@ const state = {
       id: '5',
     },
     {
-      imge: require('../../assets/img/trainer/man/m-1.jpg'),
+      imge: 'https://s6.uupload.ir/files/m-1_coqo.jpg',
       type: 'عمومی',
       field: 'بدنسازی',
       NameFamily: 'علی شریفی',
@@ -64,7 +64,7 @@ const state = {
       id: '6',
     },
     {
-      imge: require('../../assets/img/trainer/man/m-2.jpg'),
+      imge: 'https://s6.uupload.ir/files/m-2_rbj7.jpg',
       type: 'عمومی',
       field: 'بدنسازی',
       NameFamily: 'حسین محمودی',
@@ -73,7 +73,7 @@ const state = {
       id: '7',
     },
     {
-      imge: require('../../assets/img/trainer/man/m-3.jpg'),
+      imge: 'https://s6.uupload.ir/files/m-3_lr11.jpg',
       type: 'عمومی',
       field: 'بدنسازی',
       NameFamily: 'ماهان مهدوی',
@@ -82,7 +82,7 @@ const state = {
       id: '8',
     },
     {
-      imge: require('../../assets/img/trainer/man/m-4.jpg'),
+      imge: 'https://s6.uupload.ir/files/m-4_pwq3.jpg',
       type: 'خصوصی',
       field: 'بدنسازی',
       NameFamily: 'عادل احمدی',
@@ -91,7 +91,7 @@ const state = {
       id: '9',
     },
     {
-      imge: require('../../assets/img/trainer/man/m-5.png'),
+      imge: 'https://s6.uupload.ir/files/m-5_ner.png',
       type: 'خصوصی',
       field: 'بدنسازی',
       NameFamily: 'مهران صالحی',
@@ -100,7 +100,7 @@ const state = {
       id: '10',
     },
     {
-      imge: require('../../assets/img/trainer/man/m-6.jpg'),
+      imge: 'https://s6.uupload.ir/files/m-6_bi6p.jpg',
       type: 'خصوصی',
       field: 'بدنسازی',
       NameFamily: 'محمد ساسانی',
@@ -173,60 +173,60 @@ const state = {
   ],
   program: [
     {
-      imge: require('../../assets/img/trainer/program/1.gif'),
+      imge: 'https://gymfitclub.ir/public/images/articles/upload/barbell-bench-press.gif',
       title: 'پرس سینه هالتر :  ۱۰ × ۳',
     },
     {
-      imge: require('../../assets/img/trainer/program/2.gif'),
+      imge: 'https://gymfitclub.ir/public/images/articles/upload/incline-barbell-bench-press.gif',
       title: 'پرس بالا سینه : ۱۰ × ۳',
     },
     {
-      imge: require('../../assets/img/trainer/program/3.gif'),
+      imge: 'https://gymfitclub.ir/public/images/articles/upload/butterfly_maschine.gif',
       title: 'قفسه فلای : ۱۰ × ۳',
     },
     {
-      imge: require('../../assets/img/trainer/program/4.gif'),
+      imge: 'https://gymfitclub.ir/public/images/articles/upload/military-press.gif',
       title: 'سرشانه هالتر از جلو : ۱۰ × ۳',
     },
     {
-      imge: require('../../assets/img/trainer/program/5.gif'),
+      imge: 'https://gymfitclub.ir/public/images/articles/upload/wide-grip-lat-pulldown.gif',
       title: 'لت از جلو دست باز : ۱۰ × ۳',
     },
     {
-      imge: require('../../assets/img/trainer/program/6.gif'),
+      imge: 'https://gymfitclub.ir/public/images/articles/upload/cable-seated-row.gif',
       title: 'قایقی دستگاه : ۱۰ × ۳',
     },
     {
-      imge: require('../../assets/img/trainer/program/7.gif'),
+      imge: 'https://gymfitclub.ir/public/images/articles/upload/barbell-cheat-curl.gif',
       title: 'جلو بازو هالتر : ۱۰ × ۳',
     },
     {
-      imge: require('../../assets/img/trainer/program/8.gif'),
+      imge: 'https://gymfitclub.ir/public/images/articles/upload/cable-drag-curl.gif',
       title: 'جلو بازو سیم کش : ۱۰ × ۳',
     },
     {
-      imge: require('../../assets/img/trainer/program/9.gif'),
+      imge: 'https://gymfitclub.ir/public/images/articles/upload/straight-bar-tricep-pushdown.gif',
       title: 'پشت بازو سیم کش : ۱۰ × ۳',
     },
 
     {
-      imge: require('../../assets/img/trainer/program/10.gif'),
+      imge: 'https://gymfitclub.ir/public/images/articles/upload/leg-extension-machine-(1).gif',
       title: 'جلو پا دستگاه : ۱۰ × ۳',
     },
     {
-      imge: require('../../assets/img/trainer/program/11.gif'),
+      imge: 'https://gymfitclub.ir/public/images/articles/upload/lying-leg-curl.gif',
       title: 'پشت پا دستگاه : ۱۰ × ۳',
     },
     {
-      imge: require('../../assets/img/trainer/program/12.gif'),
+      imge: 'https://gymfitclub.ir/public/images/articles/upload/standing-calf-raise.gif',
       title: 'ساق پا دستگاه : ۱۵ × ۳',
     },
     {
-      imge: require('../../assets/img/trainer/program/13.gif'),
+      imge: 'https://gymfitclub.ir/public/images/articles/upload/knee-touch-crunch.gif',
       title: 'شکم : ۱۵ × ۳',
     },
     {
-      imge: require('../../assets/img/trainer/program/14.gif'),
+      imge: 'https://gymfitclub.ir/public/images/articles/upload/back-extension.gif',
       title: 'فیله کمر : ۱۵ × ۳',
     },
   ],

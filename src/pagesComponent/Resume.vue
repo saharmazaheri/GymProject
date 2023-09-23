@@ -9,8 +9,8 @@
             <h2>رزومه</h2>
           </div>
           <div class="col-12">
-            <router-link to="/">خانه</router-link>
-            <router-link to="/resume">رزومه</router-link>
+            <router-link to="/"> خانه </router-link>
+            <router-link to="/resume"> رزومه </router-link>
           </div>
         </div>
       </div>

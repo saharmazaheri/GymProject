@@ -2,7 +2,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import StoreP from './vuex/StoreP.js'
+import StoreP from './StoreP.js'
 import Mixin from './Mixins/Mixin.js'
 
 import CoreuiVue from '@coreui/vue'

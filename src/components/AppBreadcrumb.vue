@@ -1,5 +1,5 @@
 <template>
-  <CBreadcrumb class="d-md-down-none me-auto mb-0">
+  <CBreadcrumb class="d-md-down-none me-auto mb-0" style="direction: ltr">
     <CBreadcrumbItem
       v-for="item in breadcrumbs"
       :key="item"

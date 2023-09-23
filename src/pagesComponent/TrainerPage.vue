@@ -9,8 +9,8 @@
             <h2>اطلاعات مربی</h2>
           </div>
           <div class="col-12">
-            <router-link to="/">خانه</router-link>
-            <router-link to="/trainers">مربی‌ها</router-link>
+            <router-link to="/"> خانه </router-link>
+            <router-link to="/trainers"> مربی‌ها </router-link>
           </div>
         </div>
       </div>
@@ -125,7 +125,6 @@
                             سلام مه گل عزیز شما لطف دارید نتیجه تلاش خودتان است
                             :))
                           </p>
-                          <a class="btn-T">پاسخ</a>
                         </div>
                       </div>
                     </li>
@@ -158,7 +157,6 @@
                           <h3>پاسخ مربی به مریم</h3>
                           <p><span>15:25 1402/04/07</span></p>
                           <p>سلام خیلی خوشحالم که استفاده می‌کنید.</p>
-                          <a class="btn">پاسخ</a>
                         </div>
                       </div>
                     </li>

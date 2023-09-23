@@ -8,8 +8,8 @@
             <h2>پرداخت اینترنتی</h2>
           </div>
           <div class="col-12">
-            <router-link to="/">خانه</router-link>
-            <router-link to="/dargah-pardakht">درگاه پرداخت</router-link>
+            <router-link to="/"> خانه </router-link>
+            <router-link to="/dargah-pardakht"> درگاه پرداخت </router-link>
           </div>
         </div>
       </div>
@@ -108,6 +108,7 @@
                     <input
                       type="tel"
                       class="fresume-input card-I text-center"
+                      style="margin-right: 49px"
                       maxlength="5"
                       placeholder="کد امنیتی"
                       v-model="securitycode"
@@ -166,7 +167,8 @@
                       style="
                         background-color: rgb(38, 220, 47);
                         color: aliceblue;
-                        margin-left: 5px;
+                        margin-left: 100px;
+                        margin-right: 70px;
                       "
                     >
                       پرداخت
@@ -226,6 +228,11 @@ import { Mixin } from '@/Mixins/Mixin.js'
 export default {
   setup() {
     return { v$: useVuelidate() }
+  },
+  data() {
+    return {
+      visibleVerticallyCenteredDemo: true,
+    }
   },
   mixins: [Mixin],
   computed: {
